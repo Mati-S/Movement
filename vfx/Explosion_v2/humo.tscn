@@ -1,0 +1,808 @@
+[gd_scene load_steps=114 format=3 uid="uid://da25hykfx0be"]
+
+[ext_resource type="Script" uid="uid://cjmedh8sb0tju" path="res://vfx/Explosion_v2/humo.gd" id="1_j82cg"]
+[ext_resource type="Texture2D" uid="uid://ucxyij7q58ot" path="res://vfx/Explosion_v2/particle_sprite_smoke.webp" id="1_rmghi"]
+[ext_resource type="PackedScene" uid="uid://dv7x6uwtehcyp" path="res://vfx/Explosion_v2/sprite_explosion.tscn" id="4_8amvm"]
+[ext_resource type="Texture2D" uid="uid://bglhdjk7fsiaq" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0001.png" id="6_5b2kq"]
+[ext_resource type="Texture2D" uid="uid://qt0q1w3abahm" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0002.png" id="7_vasnt"]
+[ext_resource type="Texture2D" uid="uid://5oaq30mvq153" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0003.png" id="8_74edq"]
+[ext_resource type="Texture2D" uid="uid://bptabs56pla0w" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0004.png" id="9_i4k12"]
+[ext_resource type="Texture2D" uid="uid://lavuq0madsyp" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0005.png" id="10_80lsn"]
+[ext_resource type="Texture2D" uid="uid://dwf5uo0gao0ks" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0006.png" id="11_7qe87"]
+[ext_resource type="Texture2D" uid="uid://c0rxr20to18vk" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0007.png" id="12_gd4ns"]
+[ext_resource type="Texture2D" uid="uid://dbly4haxtr52p" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0008.png" id="13_tj7ep"]
+[ext_resource type="Texture2D" uid="uid://cbdxohbj53276" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0009.png" id="14_dt5p7"]
+[ext_resource type="Texture2D" uid="uid://dxln84katdtm7" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0010.png" id="15_5dbul"]
+[ext_resource type="Texture2D" uid="uid://djw01ryighpfx" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0011.png" id="16_yxq1u"]
+[ext_resource type="Texture2D" uid="uid://b80k13wt8608p" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0012.png" id="17_6cq81"]
+[ext_resource type="Texture2D" uid="uid://cekax70v6rhm8" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0013.png" id="18_dhi73"]
+[ext_resource type="Texture2D" uid="uid://ml68bjdrf6k8" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0014.png" id="19_xkbq2"]
+[ext_resource type="Texture2D" uid="uid://cmwfd013asie0" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0015.png" id="20_8nc8b"]
+[ext_resource type="Texture2D" uid="uid://dx5grx8qgyde0" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0016.png" id="21_joxue"]
+[ext_resource type="Texture2D" uid="uid://crxwqfiijdq2o" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0017.png" id="22_1ecpc"]
+[ext_resource type="Texture2D" uid="uid://cn36swy5t3bn7" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0018.png" id="23_qxamv"]
+[ext_resource type="Texture2D" uid="uid://nra7swx4lhg3" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0019.png" id="24_sqxb0"]
+[ext_resource type="Texture2D" uid="uid://50kq5t81pxyy" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0020.png" id="25_0iiu5"]
+[ext_resource type="Texture2D" uid="uid://dopbq3kp6jdvh" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0021.png" id="26_yriyw"]
+[ext_resource type="Texture2D" uid="uid://bq6ik5lp3kspd" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0022.png" id="27_rbka1"]
+[ext_resource type="Texture2D" uid="uid://d3jqlcx16nm06" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0023.png" id="28_o6b0t"]
+[ext_resource type="Texture2D" uid="uid://buu1isvmpocw" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0024.png" id="29_ipktk"]
+[ext_resource type="Texture2D" uid="uid://dobxai0y8jejb" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0025.png" id="30_n70y8"]
+[ext_resource type="Texture2D" uid="uid://c8wm53ljqsfdl" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0026.png" id="31_dy57v"]
+[ext_resource type="Texture2D" uid="uid://bo4ctpworx8e5" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0027.png" id="32_hugfv"]
+[ext_resource type="Texture2D" uid="uid://ck7sebcigdm4s" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0028.png" id="33_1nusg"]
+[ext_resource type="Texture2D" uid="uid://b5rs5mdrmshxw" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0029.png" id="34_3kcwd"]
+[ext_resource type="Texture2D" uid="uid://boumqvt2gommd" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0030.png" id="35_hv3tr"]
+[ext_resource type="Texture2D" uid="uid://xbrnmnqaefxv" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0031.png" id="36_fwtrb"]
+[ext_resource type="Texture2D" uid="uid://i85jmbq3l0um" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0032.png" id="37_vmn2w"]
+[ext_resource type="Texture2D" uid="uid://c8l2b5vr3crvc" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0033.png" id="38_28br7"]
+[ext_resource type="Texture2D" uid="uid://dabai75bmbv76" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0034.png" id="39_bwdgn"]
+[ext_resource type="Texture2D" uid="uid://i0odhmvhhggj" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0035.png" id="40_ld48h"]
+[ext_resource type="Texture2D" uid="uid://bupw7dv2pasns" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0036.png" id="41_ydibd"]
+[ext_resource type="Texture2D" uid="uid://bvt4vk6b7vjct" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0037.png" id="42_jkdjj"]
+[ext_resource type="Texture2D" uid="uid://dgm8q6lnyv31g" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0038.png" id="43_uewby"]
+[ext_resource type="Texture2D" uid="uid://d2cimcgdgilhh" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0039.png" id="44_gm8fq"]
+[ext_resource type="Texture2D" uid="uid://b0vvthdwesgdt" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0040.png" id="45_ljwsi"]
+[ext_resource type="Texture2D" uid="uid://byeetiqyyfxyl" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0041.png" id="46_emc8t"]
+[ext_resource type="Texture2D" uid="uid://dr1si5j5j0bfe" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0042.png" id="47_4womw"]
+[ext_resource type="Texture2D" uid="uid://bnhvd5cinjam1" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0043.png" id="48_gi5su"]
+[ext_resource type="Texture2D" uid="uid://clgn8ct005s44" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0044.png" id="49_fdyjr"]
+[ext_resource type="Texture2D" uid="uid://8cy413s4w4vt" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0045.png" id="50_rfrk8"]
+[ext_resource type="Texture2D" uid="uid://bmko5bunq4fl5" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0046.png" id="51_sa65j"]
+[ext_resource type="Texture2D" uid="uid://u5td3htuc5ap" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0047.png" id="52_x1hvv"]
+[ext_resource type="Texture2D" uid="uid://h0qew00wn2nh" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0048.png" id="53_227cr"]
+[ext_resource type="Texture2D" uid="uid://drjweowchof0i" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0049.png" id="54_yo7mk"]
+[ext_resource type="Texture2D" uid="uid://c0bsj6fny04bd" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0050.png" id="55_uukcv"]
+[ext_resource type="Texture2D" uid="uid://dfuqdsm8f8gf6" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0051.png" id="56_1b5bn"]
+[ext_resource type="Texture2D" uid="uid://n6pqeoh3mvru" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0052.png" id="57_k3apq"]
+[ext_resource type="Texture2D" uid="uid://bomsocisdoyg6" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0053.png" id="58_vkb3j"]
+[ext_resource type="Texture2D" uid="uid://d3n6p1a878gc7" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0054.png" id="59_dm0bm"]
+[ext_resource type="Texture2D" uid="uid://b6ah0utm6ekow" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0055.png" id="60_ka8e7"]
+[ext_resource type="Texture2D" uid="uid://bhje32o68pcak" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0056.png" id="61_26frx"]
+[ext_resource type="Texture2D" uid="uid://ba6on4sh65xn0" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0057.png" id="62_e4rgx"]
+[ext_resource type="Texture2D" uid="uid://bj4usitda64ia" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0058.png" id="63_fxj1y"]
+[ext_resource type="Texture2D" uid="uid://b7730p8gexiif" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0059.png" id="64_ihmy0"]
+[ext_resource type="Texture2D" uid="uid://cdgkqwn4cf0ws" path="res://vfx/Explosion_v2/Texs/Explosion 1/explosion0060.png" id="65_y5ney"]
+
+[sub_resource type="Curve" id="Curve_iygm2"]
+_data = [Vector2(0, 0.994733), 0.0, 0.0, 0, 0, Vector2(0.618119, 0.894395), -0.316021, -0.316021, 0, 0, Vector2(0.926606, 0.5987), -1.59383, -1.59383, 0, 0, Vector2(1, 0), -9.10141, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="CurveTexture" id="CurveTexture_ja4q0"]
+width = 512
+curve = SubResource("Curve_iygm2")
+
+[sub_resource type="Gradient" id="Gradient_c0n8x"]
+offsets = PackedFloat32Array(0, 0.00704225, 0.161972, 0.316901, 0.485915)
+colors = PackedColorArray(0.33, 0.33, 0.33, 0, 0.33, 0.33, 0.33, 0.8, 0.33, 0.33, 0.33, 0.8, 0.548962, 0.548963, 0.548962, 0.941176, 0.959352, 0.91809, 0.973211, 0.913725)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wrwky"]
+gradient = SubResource("Gradient_c0n8x")
+width = 512
+
+[sub_resource type="Curve" id="Curve_edvw7"]
+_limits = [0.0, 100.0, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 100), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_qonqg"]
+curve = SubResource("Curve_edvw7")
+
+[sub_resource type="Curve" id="Curve_0fhj2"]
+_data = [Vector2(0.00457666, 0.00445712), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_70y0h"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, -0.0825407, 0, 0, Vector2(0.0107239, 0.0549425), -0.174508, -0.174508, 0, 0, Vector2(1, -0.0604606), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveXYZTexture" id="CurveXYZTexture_2dtyk"]
+width = 512
+curve_x = SubResource("Curve_0fhj2")
+curve_y = SubResource("Curve_70y0h")
+curve_z = SubResource("Curve_0fhj2")
+
+[sub_resource type="Curve" id="Curve_kvmh4"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.0692641, 0.186813), 0.0, 0.0, 0, 0, Vector2(0.993135, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_lsrif"]
+curve = SubResource("Curve_kvmh4")
+
+[sub_resource type="Curve" id="Curve_lreps"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.678322, 0.350832), 0.921398, 0.921398, 0, 0, Vector2(1, 1), 4.28451, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_qew25"]
+curve = SubResource("Curve_lreps")
+
+[sub_resource type="Curve" id="Curve_hd2jv"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.940298, 0.121622), 0.0, 0.0, 0, 0, Vector2(1, 0.989011), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_3kufh"]
+curve = SubResource("Curve_hd2jv")
+
+[sub_resource type="Curve" id="Curve_ol1ub"]
+_limits = [0.0, 1.5, 0.0, 1.0]
+_data = [Vector2(0, 0.139156), 0.0, 0.0, 0, 0, Vector2(0.899654, 1.22651), 0.0, 0.0, 0, 0, Vector2(1, 1.5), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_3plj0"]
+curve = SubResource("Curve_ol1ub")
+
+[sub_resource type="Curve" id="Curve_6jqif"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.0080429, 0.0331094), 0.0, 0.0, 0, 0, Vector2(1, -0.709213), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_x3yki"]
+curve = SubResource("Curve_6jqif")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_xrsn3"]
+particle_flag_align_y = true
+particle_flag_rotate_y = true
+emission_shape_scale = Vector3(1, 0, 1)
+velocity_pivot = Vector3(0, 1, 0)
+spread = 0.0
+initial_velocity_max = 2.0
+directional_velocity_min = 1.0
+directional_velocity_max = 300.0
+directional_velocity_curve = SubResource("CurveXYZTexture_2dtyk")
+radial_velocity_max = 200.0
+radial_velocity_curve = SubResource("CurveTexture_3kufh")
+gravity = Vector3(0, -7, 0)
+linear_accel_min = -5.0
+linear_accel_max = 20.0
+linear_accel_curve = SubResource("CurveTexture_lsrif")
+radial_accel_max = 18.0
+radial_accel_curve = SubResource("CurveTexture_qew25")
+tangential_accel_min = -1.0
+tangential_accel_max = 5.0
+tangential_accel_curve = SubResource("CurveTexture_x3yki")
+damping_max = 100.0
+damping_curve = SubResource("CurveTexture_qonqg")
+attractor_interaction_enabled = false
+scale_max = 20.0
+scale_curve = SubResource("CurveTexture_3plj0")
+scale_over_velocity_max = 60.6
+color_ramp = SubResource("GradientTexture1D_wrwky")
+alpha_curve = SubResource("CurveTexture_ja4q0")
+anim_speed_min = 0.5
+anim_speed_max = 1.0
+turbulence_noise_speed = Vector3(0, 1, 0)
+turbulence_influence_min = 0.02
+turbulence_influence_max = 0.05
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tiswy"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.960351, 0.960351, 0.960351, 0.905882)
+albedo_texture = ExtResource("1_rmghi")
+backlight_enabled = true
+backlight = Color(1, 1, 1, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_mj7kf"]
+material = SubResource("StandardMaterial3D_tiswy")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4t2ve"]
+transparency = 1
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 0.113725)
+albedo_texture = ExtResource("1_rmghi")
+backlight_enabled = true
+backlight = Color(1, 1, 1, 1)
+billboard_mode = 3
+billboard_keep_scale = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = false
+distance_fade_max_distance = 2540.7
+
+[sub_resource type="Curve" id="Curve_oc0qk"]
+_limits = [0.0, 0.5, 0.0, 1.0]
+_data = [Vector2(0.00543478, 0.5), 0.0, 0.0, 0, 0, Vector2(0.255411, 0.192308), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_rn0d6"]
+curve = SubResource("Curve_oc0qk")
+
+[sub_resource type="Curve" id="Curve_hxsy1"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.0909091, 0.285714), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_ul7a4"]
+curve = SubResource("Curve_hxsy1")
+
+[sub_resource type="Curve" id="Curve_ytbjq"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_7v282"]
+curve = SubResource("Curve_ytbjq")
+
+[sub_resource type="Curve" id="Curve_essd5"]
+_data = [Vector2(0, 0.076923), 0.0, 0.0, 0, 0, Vector2(0.467532, 0.824176), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_1hh7n"]
+curve = SubResource("Curve_essd5")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7b441"]
+lifetime_randomness = 0.5
+emission_shape_scale = Vector3(1, 0, 1)
+emission_shape = 6
+emission_ring_axis = Vector3(0, 1, 0)
+emission_ring_height = 1.0
+emission_ring_radius = 35.0
+emission_ring_inner_radius = 0.0
+emission_ring_cone_angle = 90.0
+angle_max = 45.0
+velocity_pivot = Vector3(0, 1, 0)
+direction = Vector3(0, 1, 0)
+spread = 30.0
+initial_velocity_max = 1.2
+angular_velocity_max = 0.35
+gravity = Vector3(0, 5, 0)
+linear_accel_max = 15.0
+linear_accel_curve = SubResource("CurveTexture_ul7a4")
+radial_accel_min = -10.0
+radial_accel_max = 10.62
+radial_accel_curve = SubResource("CurveTexture_7v282")
+tangential_accel_max = 5.0
+scale_max = 12.25
+scale_curve = SubResource("CurveTexture_1hh7n")
+alpha_curve = SubResource("CurveTexture_rn0d6")
+anim_speed_min = 0.5
+anim_speed_max = 1.0
+anim_offset_max = 0.1
+turbulence_enabled = true
+turbulence_noise_strength = 0.7
+turbulence_noise_scale = 3.0
+turbulence_influence_max = 0.2
+
+[sub_resource type="QuadMesh" id="QuadMesh_b87ui"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_b5m1y"]
+direction = Vector3(0, 1, 0)
+initial_velocity_max = 25.0
+gravity = Vector3(0, -25, 0)
+collision_mode = 1
+collision_friction = 1.0
+collision_bounce = 0.0
+sub_emitter_mode = 1
+sub_emitter_frequency = 100.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vcnjm"]
+cull_mode = 2
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_150xx"]
+material = SubResource("StandardMaterial3D_vcnjm")
+size = Vector3(0.1, 0.12, 0.18)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lxejf"]
+cull_mode = 2
+albedo_color = Color(0.0823529, 0.0823529, 0.0823529, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_m4ldh"]
+material = SubResource("StandardMaterial3D_lxejf")
+size = Vector3(0.1, 0.08, 0.06)
+
+[sub_resource type="Animation" id="Animation_s5e33"]
+resource_name = "Explosion"
+length = 10.0
+step = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Polvo:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.75, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HumoPrincipal:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HumoPrincipal:explosiveness")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.025, 1.2)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Escombros:one_shot")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Escombros:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.025),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LuzFogonazo:light_energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.225),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 6.0, 0.0]
+}
+tracks/6/type = "method"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath(".")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(9),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"_on_smoke_finished"
+}]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("StaticBody3D/CollisionShape3D:disabled")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(5, nan),
+"transitions": PackedFloat32Array(0, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="Animation" id="Animation_py0uc"]
+length = 30.0
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Polvo:emitting")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 30),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("HumoPrincipal:emitting")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 30),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("HumoPrincipal:explosiveness")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0.275, 1.45)
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Escombros:one_shot")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Escombros:emitting")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("LuzFogonazo:light_energy")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [6.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("StaticBody3D/CollisionShape3D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_tytc1"]
+_data = {
+&"Explosion": SubResource("Animation_s5e33"),
+&"RESET": SubResource("Animation_py0uc")
+}
+
+[sub_resource type="Curve" id="Curve_63cs3"]
+_data = [Vector2(0, 1), 0.0, -3.37885, 0, 0, Vector2(0.985876, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_4lhhl"]
+curve = SubResource("Curve_63cs3")
+
+[sub_resource type="Curve" id="Curve_h2rdg"]
+_data = [Vector2(0, 0), 0.0, 3.32084, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_jdxqh"]
+curve = SubResource("Curve_h2rdg")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_ykugl"]
+gravity = Vector3(0, 0, 0)
+scale_max = 2.0
+scale_curve = SubResource("CurveTexture_jdxqh")
+alpha_curve = SubResource("CurveTexture_4lhhl")
+anim_speed_min = 0.5
+anim_speed_max = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rx03t"]
+transparency = 1
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.121569, 0.121569, 0.121569, 1)
+albedo_texture = ExtResource("1_rmghi")
+billboard_mode = 3
+particles_anim_h_frames = 8
+particles_anim_v_frames = 8
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id="QuadMesh_88885"]
+material = SubResource("StandardMaterial3D_rx03t")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_mc2pu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_5b2kq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vasnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_74edq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_i4k12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_80lsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_7qe87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gd4ns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tj7ep")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_dt5p7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5dbul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_yxq1u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_6cq81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_dhi73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_xkbq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_8nc8b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_joxue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_1ecpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qxamv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_sqxb0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0iiu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_yriyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_rbka1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_o6b0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ipktk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_n70y8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dy57v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_hugfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1nusg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_3kcwd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_hv3tr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_fwtrb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_vmn2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_28br7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_bwdgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ld48h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ydibd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_jkdjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uewby")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_gm8fq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_ljwsi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_emc8t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4womw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_gi5su")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_fdyjr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_rfrk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_sa65j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_x1hvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_227cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_yo7mk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_uukcv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_1b5bn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_k3apq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_vkb3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_dm0bm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_ka8e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_26frx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_e4rgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_fxj1y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_ihmy0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_y5ney")
+}],
+"loop": false,
+"name": &"default",
+"speed": 40.0
+}]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_wmt25"]
+height = 5.0
+
+[node name="Humo" type="Node3D"]
+script = ExtResource("1_j82cg")
+
+[node name="HumoPrincipal" type="GPUParticles3D" parent="."]
+cast_shadow = 0
+emitting = false
+amount = 100
+lifetime = 8.0
+explosiveness = 1.0
+randomness = 0.36
+fixed_fps = 60
+visibility_aabb = AABB(-25000, -25000, -25000, 50000, 50000, 50000)
+transform_align = 2
+process_material = SubResource("ParticleProcessMaterial_xrsn3")
+draw_pass_1 = SubResource("QuadMesh_mj7kf")
+
+[node name="Polvo" type="GPUParticles3D" parent="."]
+material_override = SubResource("StandardMaterial3D_4t2ve")
+emitting = false
+amount = 500
+lifetime = 5.0
+one_shot = true
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_7b441")
+draw_pass_1 = SubResource("QuadMesh_b87ui")
+
+[node name="Escombros" type="GPUParticles3D" parent="."]
+amount = 64
+sub_emitter = NodePath("../BloqueHumoEscombros")
+lifetime = 3.0
+one_shot = true
+explosiveness = 1.0
+visibility_aabb = AABB(-25000, -25000, -25000, 50000, 50000, 50000)
+process_material = SubResource("ParticleProcessMaterial_b5m1y")
+draw_passes = 2
+draw_pass_1 = SubResource("BoxMesh_150xx")
+draw_pass_2 = SubResource("PrismMesh_m4ldh")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_tytc1")
+}
+
+[node name="Explosion" parent="." instance=ExtResource("4_8amvm")]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 0, 64.9884, 0)
+shaded = true
+frame_progress = 0.544586
+script = null
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.866757, -0.165642, 0.47042, -4.20056e-09, 0.943235, 0.332127, -0.49873, 0.287874, -0.817555, 40.5166, 22.3152, -83.1332)
+
+[node name="GPUParticlesCollisionBox3D" type="GPUParticlesCollisionHeightField3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.75032, 0)
+size = Vector3(5000, 5000, 5000)
+
+[node name="BloqueHumoEscombros" type="GPUParticles3D" parent="."]
+visible = false
+emitting = false
+amount = 32000
+lifetime = 1.5
+explosiveness = 1.0
+visibility_aabb = AABB(-25000, -25000, -25000, 50000, 50000, 50000)
+process_material = SubResource("ParticleProcessMaterial_ykugl")
+draw_pass_1 = SubResource("QuadMesh_88885")
+
+[node name="Fogonazo" type="AnimatedSprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.804709, 0)
+pixel_size = 0.07
+billboard = 2
+sprite_frames = SubResource("SpriteFrames_mc2pu")
+frame = 59
+
+[node name="LuzFogonazo" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 8.6648, 0)
+light_energy = 6.0
+light_specular = 7.202
+omni_range = 50.0
+omni_attenuation = 0.574349
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+visible = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("CylinderShape3D_wmt25")
+
+[connection signal="finished" from="HumoPrincipal" to="." method="_on_smoke_finished"]
+[connection signal="animation_looped" from="Fogonazo" to="Fogonazo" method="_on_animation_looped"]

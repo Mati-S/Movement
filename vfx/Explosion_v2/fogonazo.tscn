@@ -1,0 +1,38 @@
+[gd_scene load_steps=10 format=3 uid="uid://b1q1ttaf4pen7"]
+
+[ext_resource type="Shader" uid="uid://c3dwula8x85ag" path="res://demos_anteriores/Explosion_v2/Shaders/basicMat.tres" id="1_sqrkq"]
+[ext_resource type="Texture2D" uid="uid://bpf867x2yp3q7" path="res://addons/kenney_particle_pack/fire_02.png" id="2_j4yi7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1582m"]
+render_priority = 0
+shader = ExtResource("1_sqrkq")
+shader_parameter/Main_tex = ExtResource("2_j4yi7")
+
+[sub_resource type="Gradient" id="Gradient_idloq"]
+offsets = PackedFloat32Array(0.00613497, 0.331288, 0.650307, 1)
+colors = PackedColorArray(0.886275, 0.545098, 0.00784314, 1, 0.901368, 0.534047, 0.139518, 1, 1, 1, 0, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_plpbd"]
+gradient = SubResource("Gradient_idloq")
+
+[sub_resource type="Curve" id="Curve_e8j5g"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(0.997175, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_q86ex"]
+curve = SubResource("Curve_e8j5g")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_k8xtd"]
+gravity = Vector3(0, 2, 0)
+scale_curve = SubResource("CurveTexture_q86ex")
+color_ramp = SubResource("GradientTexture1D_plpbd")
+
+[sub_resource type="QuadMesh" id="QuadMesh_h1xak"]
+
+[node name="Fogonazo" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+material_override = SubResource("ShaderMaterial_1582m")
+amount = 3
+process_material = SubResource("ParticleProcessMaterial_k8xtd")
+draw_pass_1 = SubResource("QuadMesh_h1xak")
