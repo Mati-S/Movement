@@ -1,13 +1,16 @@
 extends VehicleBody3D
 
+signal point_achieved()
 
 @export var MAX_STEER = 0.9
 @export var ENGINE_POWER = 300.0
 
 @export var path_points : int = 10
 var path_array : Array[Vector3]
+var return_path_array : Array[Vector3]
 
 var flag_movement : bool = false
+var flag_loop: bool = false
 
 func _ready():
 	ENGINE_POWER = self.mass * 3.0
@@ -15,8 +18,8 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	if flag_movement:
 		var target_position = path_array[0]
-		if position.distance_to(target_position) < 0.5:
-			path_array.remove_at(0)
+		if global_position.distance_to(path_array[0]) < 2:
+			point_achieved.emit()
 			if path_array.size() == 0:
 				flag_movement = !flag_movement
 				engine_force = 0.0

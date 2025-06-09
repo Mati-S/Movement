@@ -348,33 +348,27 @@ surface_material_override/9 = SubResource("StandardMaterial3D_yxdhf")
 surface_material_override/10 = ExtResource("2_8y3ni")
 
 [node name="VehicleWheel3D" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.684253, 1.89103)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.445056, 1.89103)
 use_as_traction = true
 use_as_steering = true
-wheel_radius = 1.0
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.684253, -0.176081)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.42998, -0.176081)
 use_as_steering = true
-wheel_radius = 1.0
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52239, 0.684253, -0.176081)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52239, 0.507735, -0.176081)
 use_as_steering = true
-wheel_radius = 1.0
 
 [node name="VehicleWheel3D5" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.684253, -2.77127)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.322014, -2.29321)
 use_as_steering = true
-wheel_radius = 1.0
 
 [node name="VehicleWheel3D6" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52239, 0.684253, -2.77127)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52239, 0.515349, -1.71052)
 use_as_steering = true
-wheel_radius = 1.0
 
 [node name="VehicleWheel3D2" type="VehicleWheel3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24762, 0.684253, 1.89103)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.24762, 0.435545, 1.80204)
 use_as_traction = true
 use_as_steering = true
-wheel_radius = 1.0

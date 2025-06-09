@@ -44,14 +44,15 @@ func _ready() -> void:
 	muerto = load_model(modelo_muerto, "Muerto")
 	vivo.propagate_call("show", [], true)
 	muerto.propagate_call("hide", [], true)
+	vivo.point_achieved.connect(_on_vivo_point_achieved)
 	
 func swap_to_new_path(new_path: Array) -> void:
 	if new_path.size() > 0 :
 		if salud > 0:
 			vivo.path_array = new_path
-			if !vivo.flag_movement: 
-				vivo.brake = 0.0
+			if !vivo.flag_movement:
 				vivo.flag_movement = !vivo.flag_movement
+				
 
 func clear_path() ->void:
 	if salud > 0:
@@ -61,3 +62,15 @@ func clear_path() ->void:
 				child.free()
 				vivo.path_array.clear()
 	
+
+
+func _on_vivo_point_achieved() -> void:
+	if salud > 0:
+		if vivo.flag_loop:
+			vivo.return_path_array.append(vivo.path_array[0])
+			vivo.path_array.remove_at(0)
+		else:
+			vivo.path_array.remove_at(0)
+			var path_point = self.find_child("Path", true, false)
+			var child = path_point.get_child(0)
+			child.free()

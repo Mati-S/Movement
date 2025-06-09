@@ -163,8 +163,7 @@ script = ExtResource("2_2bkep")
 script = ExtResource("3_3cbam")
 
 [node name="TAM" parent="Player_Manager" instance=ExtResource("4_gv487")]
-transform = Transform3D(-0.00685905, 0, 0.999976, 0, 1, 0, -0.999976, 0, -0.00685905, 12.9847, 0.669868, 58.0132)
-visible = false
+transform = Transform3D(-0.00685905, 0, 0.999976, 0, 1, 0, -0.999976, 0, -0.00685905, 12.9847, 0.0449295, 58.0132)
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Player_Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0049, 5.56422, 22.4889)
@@ -213,6 +212,7 @@ mesh = SubResource("SphereMesh_1hhjd")
 
 [node name="CharacterBody3D2" type="CharacterBody3D" parent="Player_Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.648, 5.13496, 22.4889)
+visible = false
 disable_mode = 1
 floor_stop_on_slope = false
 script = ExtResource("4_1hhjd")
@@ -251,6 +251,7 @@ mesh = SubResource("CapsuleMesh_54gbb")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Player_Manager/Target1/RigidBody3D"]
 shape = SubResource("ConvexPolygonShape3D_gv487")
+disabled = true
 
 [node name="MeshInstance3D2" type="MeshInstance3D" parent="Player_Manager/Target1/RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.703165, -0.208989)

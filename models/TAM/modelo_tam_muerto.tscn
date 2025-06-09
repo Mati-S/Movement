@@ -39,12 +39,12 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_5i08y")
 
 [node name="TamMuerto" type="StaticBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.75, 0)
 script = ExtResource("1_807bv")
 
 [node name="CollsionShapeMuerto" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_rdh5s")
+disabled = true
 
 [node name="Muerto" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)

@@ -13,6 +13,8 @@ func _ready() -> void:
 		var path = Node.new()
 		path.name = 'Path'
 		child.add_child(path)
+		if child is CharacterBody3D:
+			child.get_new_path.connect(on_get_new_path)
 
 func dispararRayo(posRayo : Vector3) -> float :
 	return 0.0
@@ -41,11 +43,6 @@ func _on_explosion_handler_explosion_emited(position: Vector3) -> void:
 		if player.position.distance_to(position) < 100 and player.visible:
 			run_to_cover_from(player, position)
 
-func add_path(point : Vector3) -> void:
-	for player in self.get_children():
-		if player.get_name() == 'CharacterBody3D':
-			player.add_path(point)
-
 func move() -> void:
 	for player in self.get_children():
 		if player.get_name() == 'CharacterBody3D':
@@ -57,13 +54,13 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("move!"):
 		move()
 
-func  run_to_cover_from(target: Node, explotion : Vector3) -> void:
+func  run_to_cover_from(target: Node, explotion : Vector3, path_steps : int = path_points) -> void:
 	var path_init = target.global_position
 	var path_direction = - target.position.direction_to(explotion)
 	var new_path : Array[Vector3] = []
 	target.clear_path()
 	var point_number = 0
-	for i in range(path_points):
+	for i in range(path_steps):
 		path_init +=  path_lenght * path_direction
 		var ground_height = get_ground_height(path_init)
 		if ground_height == -INF:
@@ -85,3 +82,7 @@ func add_point(target: Node, point_position : Vector3, point_number: int) -> voi
 	path.add_child(dot)
 	dot.name = 'Point' + str(point_number)
 	dot.global_position = point_position
+	
+func on_get_new_path(target: Node, position: Vector3, facing: Vector3, points_taken : int) -> void:
+	
+	run_to_cover_from(target, position + facing, path_points - points_taken)
