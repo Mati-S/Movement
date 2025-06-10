@@ -53,6 +53,7 @@ func swap_to_new_path(new_path: Array) -> void:
 			if !vivo.flag_movement:
 				vivo.flag_movement = !vivo.flag_movement
 				
+				
 
 func clear_path() ->void:
 	if salud > 0:

@@ -147,6 +147,9 @@ data_directory = "res://terrain_data"
 material = SubResource("Terrain3DMaterial_3cbam")
 assets = SubResource("Terrain3DAssets_54gbb")
 show_grid = true
+collision_mode = 3
+collision_shape_size = 64
+collision_radius = 80
 show_checkered = true
 show_heightmap = true
 show_region_grid = true
@@ -167,7 +170,6 @@ transform = Transform3D(-0.00685905, 0, 0.999976, 0, 1, 0, -0.999976, 0, -0.0068
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="Player_Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 32.0049, 5.56422, 22.4889)
-visible = false
 disable_mode = 1
 floor_stop_on_slope = false
 script = ExtResource("4_1hhjd")
@@ -189,7 +191,6 @@ mesh = SubResource("SphereMesh_1hhjd")
 
 [node name="CharacterBody3D3" type="CharacterBody3D" parent="Player_Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30.6427, 4.61896, 19.545)
-visible = false
 disable_mode = 1
 floor_stop_on_slope = false
 floor_snap_length = 0.0
@@ -212,7 +213,6 @@ mesh = SubResource("SphereMesh_1hhjd")
 
 [node name="CharacterBody3D2" type="CharacterBody3D" parent="Player_Manager"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.648, 5.13496, 22.4889)
-visible = false
 disable_mode = 1
 floor_stop_on_slope = false
 script = ExtResource("4_1hhjd")

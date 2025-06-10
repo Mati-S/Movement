@@ -40,7 +40,7 @@ func formar_linea() -> void:
 
 func _on_explosion_handler_explosion_emited(position: Vector3) -> void:
 	for player in self.get_children():
-		if player.position.distance_to(position) < 100 and player.visible:
+		if player.position.distance_to(position) < 20 and player.visible:
 			run_to_cover_from(player, position)
 
 func move() -> void:
@@ -55,8 +55,12 @@ func _input(event: InputEvent) -> void:
 		move()
 
 func  run_to_cover_from(target: Node, explotion : Vector3, path_steps : int = path_points) -> void:
-	var path_init = target.global_position
-	var path_direction = - target.position.direction_to(explotion)
+	var target_node = target
+	var script = target.get_script()
+	if script.get_global_name() == 'Destruible':
+		target_node = target.get_node('./Vivo')
+	var path_init = target_node.global_position
+	var path_direction = - target_node.global_position.direction_to(explotion)
 	var new_path : Array[Vector3] = []
 	target.clear_path()
 	var point_number = 0

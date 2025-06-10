@@ -354,10 +354,12 @@ use_as_steering = true
 
 [node name="VehicleWheel3D3" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.42923, 0.42998, -0.176081)
+use_as_traction = true
 use_as_steering = true
 
 [node name="VehicleWheel3D4" type="VehicleWheel3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.52239, 0.507735, -0.176081)
+use_as_traction = true
 use_as_steering = true
 
 [node name="VehicleWheel3D5" type="VehicleWheel3D" parent="."]

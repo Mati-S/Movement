@@ -31,5 +31,3 @@ script = ExtResource("4_itwnh")
 [node name="Muerto" type="StaticBody3D" parent="." instance=ExtResource("2_xosub")]
 visible = false
 script = ExtResource("5_fanv4")
-
-[connection signal="point_achieved" from="Vivo" to="." method="_on_vivo_point_achieved"]
