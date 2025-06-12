@@ -23,7 +23,6 @@ var path_array : Array[Vector3]
 var return_path_array : Array[Vector3]
 
 
-
 func _physics_process(delta):
 	if !self.is_on_floor():
 		velocity.y -= gravity * delta

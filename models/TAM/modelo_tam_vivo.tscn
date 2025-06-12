@@ -327,6 +327,7 @@ metallic = 1.0
 roughness = 0.25
 
 [node name="TamVivo" type="VehicleBody3D"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
 script = ExtResource("1_xjscf")
 
 [node name="CollisionShapeVivo" type="CollisionShape3D" parent="."]

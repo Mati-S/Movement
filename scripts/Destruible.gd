@@ -50,6 +50,13 @@ func swap_to_new_path(new_path: Array) -> void:
 	if new_path.size() > 0 :
 		if salud > 0:
 			vivo.path_array = new_path
+			vivo.flag_rotate = true
+			vivo.movement_timer = Timer.new()
+			vivo.movement_timer.set_one_shot(true)
+			vivo.movement_timer.timeout.connect(vivo._on_timer_timeout)
+			vivo.add_child(vivo.movement_timer)
+			vivo.movement_timer.start(7.5)
+
 			if !vivo.flag_movement:
 				vivo.flag_movement = !vivo.flag_movement
 				
