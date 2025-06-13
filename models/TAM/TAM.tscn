@@ -18,7 +18,6 @@ properties/2/spawn = true
 properties/2/replication_mode = 1
 
 [node name="TAM" type="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 script = ExtResource("1_nm88l")
 modelo_vivo = ExtResource("1_u3r8k")
 modelo_muerto = ExtResource("2_xosub")

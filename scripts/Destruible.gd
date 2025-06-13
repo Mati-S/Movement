@@ -24,6 +24,7 @@ signal salud_changed(value: int)
 var vivo: Node3D = null
 var muerto: Node3D = null
 
+var stuck: bool = false
 
 func load_model(p: PackedScene, model_name: String) -> Node3D:
 	if p == null:
@@ -48,8 +49,10 @@ func _ready() -> void:
 	
 func swap_to_new_path(new_path: Array) -> void:
 	if new_path.size() > 0 :
-		if salud > 0:
+		if salud > 0 and !stuck:
 			vivo.path_array = new_path
+			if vivo.flag_rotate:
+				vivo.clear_timer()
 			vivo.flag_rotate = true
 			vivo.movement_timer = Timer.new()
 			vivo.movement_timer.set_one_shot(true)
@@ -82,3 +85,7 @@ func _on_vivo_point_achieved() -> void:
 			var path_point = self.find_child("Path", true, false)
 			var child = path_point.get_child(0)
 			child.free()
+
+func got_stucked():
+	stuck = true
+	clear_path()

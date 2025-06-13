@@ -15,6 +15,7 @@ func _ready() -> void:
 		child.add_child(path)
 		if child is CharacterBody3D:
 			child.get_new_path.connect(on_get_new_path)
+		
 
 func dispararRayo(posRayo : Vector3) -> float :
 	return 0.0
@@ -73,7 +74,7 @@ func  run_to_cover_from(target: Node, explotion : Vector3, path_steps : int = pa
 		new_path.append(path_init)
 		add_point(target, path_init, point_number)
 		point_number += 1
-	target.swap_to_new_path(new_path)
+	target.swap_to_new_path(new_path, "explotion")
 	
 
 func get_ground_height(position_a: Vector3, max_distance: float = 400.0) -> float:

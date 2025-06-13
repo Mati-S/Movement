@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bact7bngd0ajv"]
+
+[ext_resource type="Texture2D" uid="uid://dhq3mddkg5ekr" path="res://visualizador/casos/blancos/T72/T72Destruido_t72-orugas-destruido.png" id="1_io8fs"]
+
+[resource]
+resource_name = "Material__49_03_-_DefaultSub2"
+cull_mode = 2
+albedo_texture = ExtResource("1_io8fs")
+metallic = 1.0
+roughness = 0.8

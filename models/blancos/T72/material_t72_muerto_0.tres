@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://chb5wql01fe0k"]
+
+[ext_resource type="Texture2D" uid="uid://1jkcblqfv6s5" path="res://visualizador/casos/blancos/T72/T72Destruido_t72-map1-destruido.png" id="1_t3awv"]
+
+[resource]
+resource_name = "Material__49_01_-_DefaultSub0"
+cull_mode = 2
+albedo_texture = ExtResource("1_t3awv")
+metallic = 1.0
+roughness = 0.8

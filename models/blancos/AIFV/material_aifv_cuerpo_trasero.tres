@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://bkuf0jldhi6dh"]
+
+[ext_resource type="Texture2D" uid="uid://vy5d1bgmmvqg" path="res://visualizador/casos/blancos/AIFV/AIFV_aifv-map2.jpg" id="1_8nqi3"]
+
+[resource]
+resource_name = "material10761"
+cull_mode = 2
+albedo_texture = ExtResource("1_8nqi3")
+metallic = 1.0
+roughness = 0.8

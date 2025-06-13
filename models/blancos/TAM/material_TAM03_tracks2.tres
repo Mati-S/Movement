@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dhyuxbuo2mjav"]
+
+[ext_resource type="Texture2D" uid="uid://br2vqgdju2rsq" path="res://visualizador/casos/blancos/TAM/TAM_tam-oruga.jpg" id="1_1vbqx"]
+
+[resource]
+resource_name = "Material2"
+cull_mode = 2
+albedo_texture = ExtResource("1_1vbqx")
+metallic = 1.0
+roughness = 0.8

@@ -1,0 +1,961 @@
+[gd_scene load_steps=42 format=4 uid="uid://jkpkxgbkm5rk"]
+
+[ext_resource type="Texture2D" uid="uid://cq0ifop273fte" path="res://visualizador/casos/blancos/Silo1/siloDestruido_silo.jpg" id="1_yevnp"]
+[ext_resource type="Texture2D" uid="uid://csq6atbq3up0y" path="res://visualizador/casos/blancos/Silo1/siloDestruido_troncosilo.jpg" id="2_ma3hb"]
+[ext_resource type="Material" uid="uid://if8qmag4vn0n" path="res://visualizador/casos/blancos/Silo1/material_silo1_cilindro.tres" id="3_pd83w"]
+[ext_resource type="Material" uid="uid://dkn8ythjphol0" path="res://visualizador/casos/blancos/Silo1/material_silo1_madera.tres" id="4_l3ynj"]
+[ext_resource type="Material" uid="uid://cce20ktt2vs7a" path="res://visualizador/casos/blancos/Silo1/material_silo1_escalera.tres" id="5_56w58"]
+[ext_resource type="Script" uid="uid://b62fmrpkuit2t" path="res://scripts/TelemetryBody.gd" id="6_bt6jy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a53tt"]
+resource_name = "Material.001"
+cull_mode = 2
+albedo_texture = ExtResource("1_yevnp")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kxkqv"]
+resource_name = "Material1"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q1lcj"]
+resource_name = "Material2"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vqasf"]
+resource_name = "Material3"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6algw"]
+resource_name = "Material4"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cyan"]
+resource_name = "Material5"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_br32i"]
+resource_name = "Material6"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e7vcx"]
+resource_name = "Material7"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nrv03"]
+resource_name = "Material8"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wj0b6"]
+resource_name = "Material9"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3dx2j"]
+resource_name = "Material10"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2su6"]
+resource_name = "Material12"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s1wyf"]
+resource_name = "Material17"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l66cv"]
+resource_name = "Material18"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gy16t"]
+resource_name = "Material19"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nxrjx"]
+resource_name = "Material20"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6jep0"]
+resource_name = "Material21"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p57tp"]
+resource_name = "Material22"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sd5tt"]
+resource_name = "Material23"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nchq3"]
+resource_name = "Material25"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cpx26"]
+resource_name = "Material26"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41ej4"]
+resource_name = "Material27"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fhfpd"]
+resource_name = "Material28"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npbcn"]
+resource_name = "Material29"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3a1sf"]
+resource_name = "Material31"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jfuk6"]
+resource_name = "Material32"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x1k1l"]
+resource_name = "Material34"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2m5r8"]
+resource_name = "Material35"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oxolg"]
+resource_name = "Material36"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ymuw"]
+resource_name = "Material37"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vh3vy"]
+resource_name = "Material38"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_unbc5"]
+resource_name = "Material39"
+cull_mode = 2
+albedo_texture = ExtResource("2_ma3hb")
+roughness = 0.99
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_sipco"]
+_surfaces = [{
+"aabb": AABB(-0.3252, -0.0575, -0.4181, 1.7799, 1.9023, 1.0477),
+"format": 34896613377,
+"index_count": 438,
+"index_data": PackedByteArray("AAACAAEAAAADAAIAAAAEAAMAAAAFAAQAAAAGAAUAAAAHAAYAAAAIAAcAAAAJAAgAAAAKAAkAAAAMAAsAAAANAAwAAAAOAA0AAAAPAA4AAAAQAA8AAAARABAAAAABABEAAQATABIAAQACABMAAgAUABMAAgADABQAAwAVABQAAwAEABUABAAWABUABAAFABYABQAXABYABQAGABcABgAYABcABgAHABgABwAZABgABwAIABkACAAaABkACAAJABoACQAbABoACQAKABsACgAcABsACwAeAB0ACwAMAB4ADAAfAB4ADAANAB8ADQAgAB8ADQAOACAADgAhACAADgAPACEADwAiACEADwAQACIAEAAjACIAEAARACMAEQASACMAEQABABIAEgAlACQAEgATACUAEwAmACUAEwAUACYAFAAnACYAFAAVACcAFQAoACcAFQAWACgAFgApACgAFgAXACkAFwAqACkAFwAYACoAGAArACoAGAAZACsAGQAsACsAGQAaACwAGgAtACwAGgAbAC0AGwAuAC0AGwAcAC4AHAAvAC4AHAAdAC8AHQAwAC8AHQAeADAAHgAxADAAHgAfADEAHwAyADEAHwAgADIAIAAzADIAIAAhADMAIQA0ADMAIQAiADQAIgA1ADQAIgAjADUAIwAkADUAIwASACQAJAA3ADYAJAAlADcAJQA4ADcAJQAmADgAJgA5ADgAJgAnADkAJwA6ADkAJwAoADoAKAA7ADoAKAApADsAKQA8ADsAKQAqADwAKgA9ADwAKgArAD0AKwA+AD0AKwAsAD4ALAA/AD4ALAAtAD8ALQBAAD8ALQAuAEAALgBBAEAALgAvAEEALwBCAEEALwAwAEIAMABDAEIAMAAxAEMAMQBEAEMAMQAyAEQAMgBFAEQAMgAzAEUAMwBGAEUAMwA0AEYANABHAEYANAA1AEcANQA2AEcANQAkADYAOAA5AEgAOQBJAEgAOQA6AEkAOgBKAEkAOgA7AEoAOwBLAEoAOwA8AEsAPABMAEsAPAA9AEwAPQBNAEwAPQA+AE0APgBOAE0APgA/AE4ASABQAE8ASABJAFAASQBRAFAASQBKAFEASgBSAFEASgBLAFIASwBTAFIASwBMAFMATABUAFMATABNAFQATQBVAFQATQBOAFUA"),
+"lods": [0.000739629, PackedByteArray("AAACAAEAAAADAAIAAAABABEAAAAEAAMAAAAFAAQAAAARABAAAAAQAA8AAAAPAA4AAAAOAA0AAAANAAwAAAAMAAsAAAAKAAkAAAAJAAgAAAAIAAcAAAAHAAYAAAAGAAUAAQACADcAAgADADcAAQA3ADYARwABADYAEQABAEcAEAARAEcAEABHAEYADwAQAEYANwADADgADwBGAEUAAwAnADgAAwAEACcAOAAnAEgABAAWACcAJwAWAEgABAAFABYASAAWAFAASABQAE8AIAAPAEUADgAPACAAIABFAEQADQAOACAAHwAgAEQADQAgAB8AHwBEAEMADAANAB8AQgAfAEMADAAfAEIACwAMAEIACwBCAB0AHQBCAEEAHAAdAEEAHABBAEAAGwAcAEAACgAcABsAGwBAAD8ACQAKABsACQAbABoAGgAbAD8ACAAJABoAGgA/AFQAVAA/AE4AVABOAFUAKwAaAFQACAAaACsAKwBUAFMABwAIACsABwArAFMABwBTAFIAFwAHAFIABgAHABcABQAGABcAFwBSAFEABQAXABYAFgAXAFEAFgBRAFAA"), 0.453699, PackedByteArray("AAAFAA8AAAAPAAsAAAAKAAcAAAAHAAUADwAWAEgASAAWAFAASABQAE8ADwAFABYADwA4ADcADwA3ADYARwAPADYADwBHAEYADwBGAEUADwBFAEQADwBEAEMAQgAPAEMACwAPAEIACwBCAB0AHQBCAEEAHAAdAEEAHABBAEAAGwAcAEAACgAcABsAGwBAAD8ABwAbAD8ABwAKABsABwA/AE4ABwBOAFUABwBVAFQAUwAHAFQABwBTAFIABwBSAFEAFgAHAFEABQAHABYAFgBRAFAADwBIADgA")],
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 86,
+"vertex_data": PackedByteArray("PjcH4aeSAAClNcza//8AANVIkOUi/AAA5FnE75HrAADHZjT4RtAAAO1t1/2OrQAAeW7//4+HAABcaGv+72IAAFJcTvkMRAAAz0tC8aUuAADTOEPnTyUAAJQUS9K2OQAAsQfbyQdVAACPADjEwHcAAAAAEMK4nQAAHAagw1nCAAAmEsHIO+EAAKkizdCj9gAAwVKPrIT4AADxZVC3rvQAAAB3g8Ed5AAA34PzyczIAAAFi5fPFKYAAJGLwdEbgAAAeIUu0HtbAABueQ7LmDwAAOtoAsMxJwAA61UCudUdAAC/QkGusSEAALExC6RCMgAAziSam41NAACoHfeVRnAAABwd0JM+lgAAOSNjleW6AABCL4Cax9kAAMI/jKIv7wAA2m9PfhHxAAAKgw+JNO0AABmURpOj3AAA/KCzm1jBAAAhqFahoJ4AAK2ogaOneAAAkaLuoQFUAACHls2cHjUAAASGwZS3HwAACHPBimEWAADYXwGANxoAAMlOynXOKgAA6kFabRlGAADEOrZn0mgAADQ6j2XKjgAAUUAiZ2uzAABbTD9sTdIAAN5cTHS15wAA9owOUJfpAAAmoM9awOUAADWxBWUw1QAAFL5ybeW5AAA6xRVzJpcAAMrFQHUtcQAArb+tc41MAACjs41uqi0AACCjgGZDGAAAJJCBXO0OAAD0fMBRwxIAAOVriUdUIwAAAl8dP58+AADdV3k5XmEAAFFXTzdXhwAAbV3iOPerAAB3af892soAAPp5C0ZB4AAAMNsxP2qyAABW4tVEso8AAOLiAEe5aQAAxdxsRRNFAAC80E9AMCYAADzAQzjPEAAAPa1ALnMHAABN+PQQ96oAAG//lBY4iAAA//+/GD9iAADi+SwXnz0AANjtDxK8HgAAVd0DClUJAABZygAAAAAAAA==")
+}, {
+"aabb": AABB(0.4639, 0.0363, 0.4744, 0.07, 1e-05, 0.07),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAA=")
+}, {
+"aabb": AABB(-0.441, 0.0363, 0.4997, 0.07, 2, 0.07),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material2",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.4553, 0.0363, -0.4414, 0.07, 1e-05, 0.07),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material3",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAA=")
+}, {
+"aabb": AABB(0.4784, -0.0115, -0.4496, 0.07, 2, 0.07),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material4",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.4553, 0.0013, -0.4064, 0.07, 0.07, 0.9672),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material5",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD//wAAAAAAAAAAAAAAAAAA/////wAAAAAAAP////8AAP//AAD//wAA////////AAAAAAAA//8AAA==")
+}, {
+"aabb": AABB(-0.4207, 0.0013, -0.453, 0.9679, 0.07, 0.0816),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material6",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("NgD/////AAAAAAAAZCQAADYAAAD//wAAAAD//2QkAAD/////mtsAAMj/AAAAAAAAyP///wAAAAD//wAAmtsAAA==")
+}, {
+"aabb": AABB(-0.4377, 0.0013, 0.4645, 0.9686, 0.07, 0.0923),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material7",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("kv///wAAAAD//wAAJcIAAJL/AAAAAAAA/////yXCAAAAAP//2T0AAGwAAAD//wAAbAD/////AAAAAAAA2T0AAA==")
+}, {
+"aabb": AABB(0.4844, 0.0013, -0.4681, 0.0807, 0.07, 0.9679),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material8",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("/////8//AADxIQAA//8AAP//AADP/wAA8SH/////AAAN3v//AAAAAAAAAAA2AAAAAAD//zYAAAAN3gAAAAAAAA==")
+}, {
+"aabb": AABB(-0.4553, 0.5525, -0.4064, 0.07, 0.07, 0.9672),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material9",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAD//wAAAAD//wAAAAAAAAAAAAAAAAAA/////wAAAAAAAP////8AAP//AAD//wAA////////AAAAAAAA//8AAA==")
+}, {
+"aabb": AABB(-0.4377, 0.5525, 0.4645, 0.9686, 0.07, 0.0923),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material10",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("kv///wAAAAD//wAAJcIAAJL/AAAAAAAA/////yXCAAAAAP//2T0AAGwAAAD//wAAbAD/////AAAAAAAA2T0AAA==")
+}, {
+"aabb": AABB(-0.4207, 0.5525, -0.453, 0.9679, 0.07, 0.0816),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material12",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("NgD/////AAAAAAAAZCQAADYAAAD//wAAAAD//2QkAAD/////mtsAAMj/AAAAAAAAyP///wAAAAD//wAAmtsAAA==")
+}, {
+"aabb": AABB(-0.5657, 0, -0.0942, 0.03, 2.848, 0.03),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material17",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.5657, 0, 0.1279, 0.03, 1e-05, 0.03),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material18",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAA=")
+}, {
+"aabb": AABB(-0.7594, 0.095, -0.0743, 0.2134, 0.021, 0.2058),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material19",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 0.2322, -0.0887, 0.0171, 0.0162, 0.249),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material20",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 0.3666, -0.0887, 0.0171, 0.0162, 0.249),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material21",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 0.6238, -0.0887, 0.0171, 0.0161, 0.249),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material22",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 0.4852, -0.0887, 0.0171, 0.0246, 0.2495),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material23",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAB0WAAAAAD//wAAYf8AAAAAAABh/wAA//90WAAAAAAAAP//nQAAAP//iqf//wAA/////50AAAAAAIqn//8AAA==")
+}, {
+"aabb": AABB(-0.58, 0.7584, -0.0887, 0.0171, 0.0215, 0.2493),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material25",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AABLQAAAAAD//wAAsP8AAAAAAACw/wAA//9LQAAAAAAAAP//TgAAAP//s7///wAA/////04AAAAAALO///8AAA==")
+}, {
+"aabb": AABB(-0.58, 1.1625, -0.0887, 0.0171, 0.0160999, 0.249),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material26",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 1.0242, -0.0892, 0.0171, 0.0239, 0.2494),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material27",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAIMAAAD//4tT//8AAAAAi1P//wAA//8AAIMAAAAAAHOsAAAAAP////97/wAA//9zrAAAAAAAAP//e/8AAA==")
+}, {
+"aabb": AABB(-0.58, 1.4368, -0.0887, 0.0171, 0.0161999, 0.249),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material28",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAAAAP//AAAAAP///////wAA/////wAAAAAAAP////8AAA==")
+}, {
+"aabb": AABB(-0.58, 1.2985, -0.0892, 0.0171, 0.024, 0.2494),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material29",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAIMAAAD//zNT//8AAAAAM1P//wAA//8AAIMAAAAAAMysAAAAAP////97/wAA///MrAAAAAAAAP//e/8AAA==")
+}, {
+"aabb": AABB(-0.58, 1.5873, -0.0892, 0.0171, 0.0239, 0.2494),
+"format": 34896613377,
+"index_count": 36,
+"index_data": PackedByteArray("AAACAAEAAQADAAAABAAGAAUABQAHAAQAAAADAAYABgAEAAAAAwABAAUABQAGAAMAAQACAAcABwAFAAEAAgAAAAQABAAHAAIA"),
+"name": "Material31",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 8,
+"vertex_data": PackedByteArray("AAAAAIMAAAD//4xT//8AAAAAjFP//wAA//8AAIMAAAAAAHOsAAAAAP////97/wAA//9zrAAAAAAAAP//e/8AAA==")
+}, {
+"aabb": AABB(-0.58, 2.0045, -0.0887, 0.0171, 0.0162001, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material32",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.3061, -0.0887, 0.0171, 0.0162001, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material34",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.1678, -0.0892, 0.0171, 0.0162001, 0.000500001),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material35",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD/////AAAAAP//AAD//wAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.5355, -0.0887, 0.0171, 0.0160999, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material36",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.3972, -0.0892, 0.0171, 0.0160999, 0.000500001),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material37",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD/////AAAAAP//AAD//wAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.7775, -0.0887, 0.0171, 0.0162001, 1e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material38",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAA=")
+}, {
+"aabb": AABB(-0.58, 2.6392, -0.0892, 0.0171, 0.0162001, 0.000500001),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"name": "Material39",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//AAD/////AAAAAP//AAD//wAAAAD//wAAAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fok00"]
+resource_name = "siloDestruido_Silo"
+_surfaces = [{
+"aabb": AABB(-0.3252, -0.0575, -0.4181, 1.7799, 1.9023, 1.0477),
+"attribute_data": PackedByteArray("08H//73i//+94v//D+r//w/q//9e8f//XvH//7D4//+w+P///////1Z8////////Vnz//6iD//+og///94r///eK//9Jkv//SZL//5eZ//+Xmf//6aD//+mg///poP//iq///4qv///ctv//3Lb//yq+//8qvv//fMX//3zF///LzP//y8z//x3U//8d1P//a9v//2vb//+94sbkD+rG5F7xxuSw+Mbk///G5FZ8xuSog8bk94rG5EmSxuSXmcbk6aDG5DuoxuSKr8bk3LbG5Cq+xuR8xcbky8zG5B3UxuRr28bkveKNyQ/qjcle8Y3JsPiNyf//jclWfI3JqIONyfeKjclJko3Jl5mNyemgjck7qI3Jiq+Nydy2jckqvo3JfMWNycvMjckd1I3Ja9uNyb3iVK4P6lSuXvFUrrD4VK7//1SuVnxUrqiDVK73ilSuSZJUrpeZVK7poFSuO6hUroqvVK7ctlSuKr5UrnzFVK7LzFSuHdRUrmvbVK6w+BuT//8bk1Z8G5OogxuT94obk0mSG5OXmRuT6aAbk7D44nf//+J3Vnzid6iD4nf3iuJ3SZLid5eZ4nfpoOJ3//////eK///poP//y8z//8vM///LzP/////G5F7xVK5e8VSusPgbkw=="),
+"format": 34896613399,
+"index_count": 438,
+"index_data": PackedByteArray("AAADAAEAAAAFAAMAAAAHAAUAAAAJAAcAAAANAAoAAAAPAA0AAAARAA8AAAATABEAAAAVABMAAAAaABgAAAAcABoAAAAeABwAAAAhAB4AAAAiACEAAAAkACIAAAABACQAAgAnACYAAgAEACcABAAoACcABAAGACgABgApACgABgAIACkACAAqACkACAALACoADAAsACsADAAOACwADgAtACwADgAQAC0AEAAuAC0AEAASAC4AEgAvAC4AEgAUAC8AFAAwAC8AFAAWADAAFwAxADAAGQAzADIAGQAbADMAGwA0ADMAGwAdADQAHQA1ADQAHQAfADUAHwA2ADUAHwAgADYAIAA3ADYAIAAjADcAIwA4ADcAIwAlADgAJQAmADgAJQACACYAJgA6ADkAJgAnADoAJwA7ADoAJwAoADsAKAA8ADsAKAApADwAKQA9ADwAKQAqAD0AKwA/AD4AKwAsAD8ALABAAD8ALAAtAEAALQBBAEAALQAuAEEALgBCAEEALgAvAEIALwBDAEIALwAwAEMAMABEAEMAMAAxAEQAMQBFAEQAMQAyAEUAMgBGAEUAMgAzAEYAMwBHAEYAMwA0AEcANABIAEcANAA1AEgANQBJAEgANQA2AEkANgBKAEkANgA3AEoANwBLAEoANwA4AEsAOAA5AEsAOAAmADkAOQBNAEwAOQA6AE0AOgBOAE0AOgA7AE4AOwBPAE4AOwA8AE8APABQAE8APAA9AFAAPgBSAFEAPgA/AFIAPwBTAFIAPwBAAFMAQABUAFMAQABBAFQAQQBVAFQAQQBCAFUAQgBWAFUAQgBDAFYAQwBXAFYAQwBEAFcARABYAFcARABFAFgARQBZAFgARQBGAFkARgBaAFkARgBHAFoARwBbAFoARwBIAFsASABcAFsASABJAFwASQBdAFwASQBKAF0ASgBeAF0ASgBLAF4ASwBMAF4ASwA5AEwATgBPAF8ATwBgAF8ATwBQAGAAUQBiAGEAUQBSAGIAUgBjAGIAUgBTAGMAUwBkAGMAUwBUAGQAVABlAGQAVABVAGUAVQBmAGUAVQBWAGYAXwBoAGcAXwBgAGgAYQBqAGkAYQBiAGoAYgBrAGoAYgBjAGsAYwBsAGsAYwBkAGwAZABtAGwAZABlAG0AZQBuAG0AZQBmAG4A"),
+"lods": [0.000739629, PackedByteArray("AAADAAEAAAAFAAMAAAABACQAAAAHAAUAAAAJAAcAAAAkACIAAAAiACEAAAAhAB4AAAAeABwAAAAcABoAAAAaABgAAAAVABMAAAATABEAAAARAA8AAAAPAA0AAAANAAoAAgAEAE0ABAAGAE0AAgBNAEwAXgACAEwAJQACAF4AIwAlAF4AIwBeAF0AIAAjAF0ATQAGAE4AIABdAFwABgA8AE4ABgAIADwATgA8AF8ACAAqADwAPAAqAF8ACAALACoAXwAqAGgAXwBoAGcANQAgAFwAHwAgADUANQBcAFsAHQAfADUANAA1AFsAHQA1ADQANABbAFoAGwAdADQAWQA0AFoAGwA0AFkAGQAbAFkAGQBZADIAMgBZAFgAMQAyAFgAMQBYAFcAMAAxAFcAFwAxADAAMABXAFYAFAAWADAAFAAwAC8ALwAwAFYAEgAUAC8ALwBWAG0AbQBWAGYAbQBmAG4AQQAvAG0AEgAvAEEAQQBtAGwAEAASAEEAEABBAGwAEABsAGsALAAQAGsADgAQACwADAAOACwALABrAGoADAAsACsAKwAsAGoAKwBqAGkA"), 0.453699, PackedByteArray("AAAJACEAAAAhABgAAAAVAA8AAAAPAAoAcgB1AF8AXwB1AGgAXwBoAGcAcgBvAHUAcgB2AE0AcgBNAEwAXgByAEwAcwBeAF0AcwBdAFwAcwBcAFsAcwBbAFoAWQBzAFoAGQBzAFkAGQBZADIAMgBZAFgAMQAyAFgAMQBYAFcAMAAxAFcAFwAxADAAMABXAFYAcAAwAFYAcABxADAAcABWAGYAcABmAG4AcABuAG0AbABwAG0AcABsAGsAcABrAGoAKwBwAGoADABwACsAKwBqAGkAdAB4AHcA")],
+"material": SubResource("StandardMaterial3D_a53tt"),
+"name": "Material.001",
+"primitive": 3,
+"uv_scale": Vector4(1.9444, 3.7616, 0, 0),
+"vertex_count": 121,
+"vertex_data": PackedByteArray("PjcH4aeS/7+lNcza////v6U1zNr//2gt1UiQ5SL8/7/VSJDlIvwcR+RZxO+R6/+/5FnE75Hr4lfHZjT4RtD/v8dmNPhG0Etl7W3X/Y6t/7/tbdf9jq3/v+1t1/2OrQ9p7W3X/Y6tHml5bv//j4f/v3lu//+Ph8j+XGhr/u9i/79caGv+72ID+FJcTvkMRP+/UlxO+QxEE/TPS0LxpS7/v89LQvGlLq7t0zhD508l/7/TOEPnTyVB4dM4Q+dPJRgvlBRL0rY5AMCUFEvStjm/IrEH28kHVf+/sQfbyQdV6hSPADjEwHf/v48AOMTAd7kGAAAQwrid/78AABDCuJ2w/hwGoMNZwiX+HAagw1nC/78mEsHIO+H/vyYSwcg74Wj6qSLN0KP2/7+pIs3Qo/Y48cFSj6yE+LPY8WVQt670IEYAd4PBHeTZV9+D88nMyF9lBYuXzxSmxGkFi5fPFKYXa5GLwdEbgCn3eIUu0HtbjvhueQ7LmDwF9OtoAsMxJxns61UCudUdtdi/QkGusSHxLLExC6RCMpMiziSam41N6BSoHfeVRnDkBhwd0JM+ljr/OSNjleW6Av5CL4Cax9lv+sI/jKIv7x7y2m9PfhHxstgKgw+JNO0gRhmURpOj3NhX/KCzm1jBYWUhqFahoJ7EaSGoVqGgnhhrraiBo6d4KveRou6hAVSO+IeWzZweNQT0BIbBlLcfFuwIc8GKYRa02NhfAYA3GpotyU7Kdc4qfyLqQVptGUboFMQ6tmfSaOQGNDqPZcqOOf9RQCJna7MC/ltMP2xN0m/63lxMdLXnH/L2jA5Ql+my3yagz1rA5UVFNbEFZTDVHFgUvnJt5blgZTrFFXMml8VpOsUVcyaXJGvKxUB1LXEf962/rXONTJD4o7ONbqotBPQgo4BmQxgV7CSQgVztDhzZ9HzAUcMSIS7la4lHVCOBIgJfHT+fPuYU3Vd5OV5h4wZRV083V4fj/21d4jj3q9z9d2n/PdrKdPr6eQtGQeA48zDbMT9qsjBmVuLVRLKPxGlW4tVEso8Ya+LiAEe5aSv3xdxsRRNFk/i80E9AMCYG9DzAQzjPEBXsPa1ALnMHROFN+PQQ96pnZm//lBY4iMtpb/+UFjiIKGv//78YP2Lw8OL5LBefPRH52O0PErwe/vNV3QMKVQm+6lnKAAAAAD/h7W3X/Y6t/FVcaGv+72L//9M4Q+dPJRHWHAagw1nCNNwcBqDDWcL//xwGoMNZwpWRBYuXzxSmvV81sQVlMNW8TjWxBWUw1WBeMNsxP2qykmoAAP9/AAD/fx8u8CgAAP9/rkJAGQAA/3/vSIARAAD/f25BOA0AAP9/AAD/f/IcAAYEHf4FAAD/f7d1JoAAAP9/hGWxggAA/39MWU2GAQABgMhQWo0BAP1/9k7snTZYarAAAP9/f2vw4QAA/3+razfmAQABgNFkDOMAAP9/euREbVEIY14BAAGAAAD/f+UMf04AAP9/3hQCP8MmnSw9QEEayUiOEbBBKg3VHeEHgh++B+H+y/V8ZYOCT1lUhjxRco5hU8KmkF/ayNxpid+Law/meWY85AXrYHTjCPBd2QyHTrITsj/DJp4sPkBAGslIjhG3QSkN1R3hB4Ifvgfh/sn1fGWCgk5ZVIY9UXWOX1PApiBhgMsuaYreiWsN5oJmReT96ll04wjwXdgMiE6xE7M/dR9EMEw+DhvNSTwRt0EpDdYd4QeTH70H4P7K9Xtlg4JOWVSGO1F0jidTT6Z/YtbNRWmr3mtr5+VmZijkwQEWdIEJc13NDJBOQhKLQLhEhgzVHeEHgh++B+H+yfV6ZYKCT1lUhj1RdY70Tumdj0VYDNod5AeWH8EHGP7c9XFlV4JQWViGnlFhj/dO7p06NcUfqGUipSFWP5ccRyIm0mER5ICuv/txMlsX7U4gFubPfAHFNU4D")
+}, {
+"aabb": AABB(0.4639, 0.0363, 0.4744, 0.07, 1e-05, 0.07),
+"attribute_data": PackedByteArray("/////w+AC8D//wvAD4D//w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_kxkqv"),
+"name": "Material1",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAD/f/8//3//P/9//z//f/8/")
+}, {
+"aabb": AABB(-0.441, 0.0363, 0.4997, 0.07, 2, 0.07),
+"attribute_data": PackedByteArray("D4D/////////////D4D//w+AC8D/////////////C8APgP///////w+A//8PgP//D4ALwA+A/////wvAD4ALwP//C8D//wvA//8LwP////8PgAvA//8LwA+AC8APgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_q1lcj"),
+"name": "Material2",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.4553, 0.0363, -0.4414, 0.07, 1e-05, 0.07),
+"attribute_data": PackedByteArray("/////w+AC8D//wvAD4D//w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_vqasf"),
+"name": "Material3",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAD/f/8//3//P/9//z//f/8/")
+}, {
+"aabb": AABB(0.4784, -0.0115, -0.4496, 0.07, 2, 0.07),
+"attribute_data": PackedByteArray("D4D/////////////D4D//w+AC8D/////////////C8APgP///////w+A//8PgP//D4ALwA+A/////wvAD4ALwP//C8D//wvA//8LwP////8PgAvA//8LwA+AC8APgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_6algw"),
+"name": "Material4",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.4553, 0.0013, -0.4064, 0.07, 0.07, 0.9672),
+"attribute_data": PackedByteArray("/////w+A////////D4ALwA+A//////////8LwP////8PgP//D4D///////8PgP//D4D//w+AEuH//xLh//8LwA+AEuH//xLh////////EuEPgBLhD4ALwP//EuEPgBLh"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAAGAAMAAwAJAAAADAASAA8ADwAVAAwAAQAKABMAEwANAAEACwAFABEAEQAUAAsABAAHABYAFgAQAAQACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_2cyan"),
+"name": "Material5",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD//wAAAAAAAP//AAD/PwAA//8AAKoq//8AAAAAAAD//wAAAAAAAP//AAAAAKoqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKoq/////wAAAAD/////AAD/P/////8AAKoqAAD//////n8AAP//////PwAA/////6oq//8AAP///n///wAA//8AAP//AAD//6oq/////////n//////////P////////6oqAAAAAP///n8AAAAA//8AAAAAAAD//6oq/3///////39U1VTV/3////9//z+qqlRV/3////9//z9U1VTV/3///////3+qqlRV/3///////39U1VTV/3////9//z+qqlRV/3///////3+qqlRV/3////9//z9U1VTV")
+}, {
+"aabb": AABB(-0.4207, 0.0013, -0.453, 0.9679, 0.07, 0.0816),
+"attribute_data": PackedByteArray("D4D/////////////D4D///////8PgAvA/////w+A/////wvA/////w+A//8PgP//D4AS4f//EuEPgP//D4AS4f//C8D//xLh//8S4f////8PgBLh//8S4Q+AEuEPgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgAIAAUABQALAAIADgATABAAEAAXAA4AAAAJABIAEgAMAAAACgAEABEAEQAUAAoAAwAGABUAFQAPAAMABwABAA0ADQAWAAcA"),
+"material": SubResource("StandardMaterial3D_br32i"),
+"name": "Material6",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("NgD/////ZSo2AP//////PzYA/////3xAAAAAAGQk7yoAAAAAZCRYAAAAAABkJHxANgAAAP//7yo2AAAA////PzYAAAD//3tAAAD//2QkZSoAAP//ZCRYAAAA//9kJHtA/////5rbZSr/////mtv/P/////+a24M/yP8AAAAA7yrI/wAAAACDP8j/AAAAAFgAyP///wAAZSrI////AACDP8j///8AAFgA//8AAJrb7yr//wAAmtv/P///AACa24M/KtVXKsIAwgD/f///gCoB1TBAzr//f///gCoB1cIAwgD/f///KtVXKjBAzr//f///KtVXKsIAwgD/fwAAgCoB1f9/AAAwQM6/KtVXKv9/AAAwQM6/gCoB1cIAwgD/fwAA")
+}, {
+"aabb": AABB(-0.4377, 0.0013, 0.4645, 0.9686, 0.07, 0.0923),
+"attribute_data": PackedByteArray("D4D/////////////D4D///////8PgAvA////////C8APgP///////w+A//8PgP//D4AS4f//EuEPgP//D4AS4f//EuH//wvA//8S4Q+AEuH///////8S4Q+AEuEPgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAUABQALAAEADgAUABEAEQAXAA4AAAAJABIAEgAMAAAACgAEABAAEAATAAoAAwAGABUAFQAPAAMACAACAA0ADQAWAAgA"),
+"material": SubResource("StandardMaterial3D_e7vcx"),
+"name": "Material7",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("kv///wAAMyuS////AAANP5L///8AAKoA//8AACXCICr//wAAJcL+P///AAAlwg0/kv8AAAAAICqS/wAAAAAQP5L/AAAAAKoA/////yXCMyv/////JcL+P/////8lwg0/AAD//9k9MysAAP//2T2qAAAA///ZPfFAbAAAAP//ICpsAAAA///+P2wAAAD///FAbAD/////MytsAP/////+P2wA/////+5AAAAAANk9ICoAAAAA2T2qAAAAAADZPe5AUatWqv9/AABdwF3A+lUCVXGBjX7/fwAA+lUCVf9/AABdwF3AUatWqnGBjX7/fwAAUatWql3AXcD/f///+lUCVXGBjX7/f///UatWqnGBjX7/f///+lUCVV3AXcD/f///")
+}, {
+"aabb": AABB(0.4844, 0.0013, -0.4681, 0.0807, 0.07, 0.9679),
+"attribute_data": PackedByteArray("D4D/////////////D4D//w+AC8D/////////////C8APgP///////w+A//8PgP//D4AS4f//EuEPgP//D4AS4f//C8D//xLh//8S4f////8PgBLh//8S4Q+AEuEPgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADgATABAAEAAXAA4AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA0ADQAWAAgA"),
+"material": SubResource("StandardMaterial3D_nrv03"),
+"name": "Material8",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("/////8//SgD/////z/+Lf//////P/2cq8SEAAP///z/xIQAA//+Lf/EhAAD//+0q//8AAM///z///wAAz/+Lf///AADP/2cq8SH/////SQDxIf////+Mf/Eh/////+0qDd7//wAAVAAN3v//AABnKg3e//8AAHYAAAAAADYA/z8AAAAANgB2AAAAAAA2AO0qAAD//zYAUwAAAP//NgB2AAAA//82AO0qDd4AAAAA/z8N3gAAAABnKg3eAAAAAHYAUYDWv/9/AADSKtIqRgFcf/9/AAB9VYGqRAFdf/9/AADSKtIqUYDWv/9/AAB9VYGqXIDQv9Iq0ir/f///cgFGf/9///99VYGqXIDQv/9///99VYGqcAFHf9Iq0ir/f///")
+}, {
+"aabb": AABB(-0.4553, 0.5525, -0.4064, 0.07, 0.07, 0.9672),
+"attribute_data": PackedByteArray("/////w+A////////D4ALwA+A//////////8LwP////8PgP//D4D///////8PgP//D4D//w+AEuH//xLh//8LwA+AEuH//xLh////////EuEPgBLhD4ALwP//EuEPgBLh"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AAAGAAMAAwAJAAAADAASAA8ADwAVAAwAAQAKABMAEwANAAEACwAFABEAEQAUAAsABAAHABYAFgAQAAQACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_wj0b6"),
+"name": "Material9",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAD//wAAAAAAAP//AAD/PwAA//8AAKoq//8AAAAAAAD//wAAAAAAAP//AAAAAKoqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKoq/////wAAAAD/////AAD/P/////8AAKoqAAD//////n8AAP//////PwAA/////6oq//8AAP///n///wAA//8AAP//AAD//6oq/////////n//////////P////////6oqAAAAAP///n8AAAAA//8AAAAAAAD//6oq/3///////39U1VTV/3////9//z+qqlRV/3////9//z9U1VTV/3///////3+qqlRV/3///////39U1VTV/3////9//z+qqlRV/3///////3+qqlRV/3////9//z9U1VTV")
+}, {
+"aabb": AABB(-0.4377, 0.5525, 0.4645, 0.9686, 0.07, 0.0923),
+"attribute_data": PackedByteArray("D4D/////////////D4D///////8PgAvA////////C8APgP///////w+A//8PgP//D4AS4f//EuEPgP//D4AS4f//EuH//wvA//8S4Q+AEuH///////8S4Q+AEuEPgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAUABQALAAEADgAUABEAEQAXAA4AAAAJABIAEgAMAAAACgAEABAAEAATAAoAAwAGABUAFQAPAAMACAACAA0ADQAWAAgA"),
+"material": SubResource("StandardMaterial3D_3dx2j"),
+"name": "Material10",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("kv///wAAMyuS////AAANP5L///8AAKoA//8AACXCICr//wAAJcL+P///AAAlwg0/kv8AAAAAICqS/wAAAAANP5L/AAAAAKoA/////yXCMyv/////JcL+P/////8lwg0/AAD//9k9MysAAP//2T2qAAAA///ZPfFAbAAAAP//ICpsAAAA///+P2wAAAD///FAbAD/////MytsAP/////+P2wA//////FAAAAAANk9ICoAAAAA2T2qAAAAAADZPe5AUatWqv9/AABdwF3A+lUCVXGBjX7/fwAA+lUCVf9/AABdwF3AUatWqnGBjX7/fwAAUatWql3AXcD/f///+lUCVXGBjX7/f///UatWqnGBjX7/f///+lUCVV3AXcD/f///")
+}, {
+"aabb": AABB(-0.4207, 0.5525, -0.453, 0.9679, 0.07, 0.0816),
+"attribute_data": PackedByteArray("D4D/////////////D4D///////8PgAvA/////w+A/////wvA/////w+A//8PgP//D4AS4f//EuEPgP//D4AS4f//C8D//xLh//8S4f////8PgBLh//8S4Q+AEuEPgAvA"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AgAIAAUABQALAAIADgATABAAEAAXAA4AAAAJABIAEgAMAAAACgAEABEAEQAUAAoAAwAGABUAFQAPAAMABwABAA0ADQAWAAcA"),
+"material": SubResource("StandardMaterial3D_h2su6"),
+"name": "Material12",
+"primitive": 3,
+"uv_scale": Vector4(1.999, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("NgD/////ZSo2AP//////PzYA/////3tAAAAAAGQk7yoAAAAAZCRYAAAAAABkJHtANgAAAP//7yo2AAAA////PzYAAAD//3tAAAD//2QkZSoAAP//ZCRYAAAA//9kJHtA/////5rbZSr/////mtv/P/////+a24M/yP8AAAAA7yrI/wAAAACDP8j/AAAAAFgAyP///wAAZSrI////AACDP8j///8AAFgA//8AAJrb7yr//wAAmtv/P///AACa24I/KtVXKsIAwgD/f///gCoB1TBAzr//f///gCoB1cIAwgD/f///KtVXKjBAzr//f///KtVXKsIAwgD/fwAAgCoB1f9/AAAwQM6/KtVXKv9/AAAwQM6/gCoB1cIAwgD/fwAA")
+}, {
+"aabb": AABB(-0.5657, 0, -0.0942, 0.03, 2.848, 0.03),
+"attribute_data": PackedByteArray("PrP/////ue3/////PrP//z6zUNL/////////////UNI+s////////z6zue0+s///PrPtpD6zue3//+2kPrPtpP//UNL//+2k///tpP//ue0+s+2k///tpD6zUNI+s+2k"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_s1wyf"),
+"name": "Material17",
+"primitive": 3,
+"uv_scale": Vector4(1.4282, 3.999, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.5657, 0, 0.1279, 0.03, 1e-05, 0.03),
+"attribute_data": PackedByteArray("/////z6zBeD//wXgPrP//w=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_l66cv"),
+"name": "Material18",
+"primitive": 3,
+"uv_scale": Vector4(1.4282, 3.4282, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD//wAA//8AAAAAAAD//wAA//8AAAAAAAD/f/8//3//P/9//z//f/8/")
+}, {
+"aabb": AABB(-0.7594, 0.095, -0.0743, 0.2134, 0.021, 0.2058),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_gy16t"),
+"name": "Material19",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 0.2322, -0.0887, 0.0171, 0.0162, 0.249),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_nxrjx"),
+"name": "Material20",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 0.3666, -0.0887, 0.0171, 0.0162, 0.249),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_6jep0"),
+"name": "Material21",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 0.6238, -0.0887, 0.0171, 0.0161, 0.249),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_p57tp"),
+"name": "Material22",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 0.4852, -0.0887, 0.0171, 0.0246, 0.2495),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+/////v/9//7////+/////v///////f/+//3//v////7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATAA8ADwAVAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABYAFgAQAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_sd5tt"),
+"name": "Material23",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAB0WAAAYwEAAHRYAAAAAAAAdFgAAPsA//8AAGH/AAD//wAAYf8AAP//AABh//sAAAAAAGH/AAAAAAAAYf8AAAAAAABh//sA//90WAAAYwH//3RYAAAAAP//dFgAAPsAAAD//50AYwEAAP//nQBjQQAA//+dAPsA//+Kp///Y0H//4qn//8AAP//iqf///sA/////50AYwH/////nQBjQf////+dAPsAAACKp///Y0EAAIqn//8AAAAAiqf///sA////f+e+///p/onA/3/afee+//90v+p+/3/Yfee+///p/onA////f+e+//90v+p+////f////3/p/onA////f/9/2n10v+p+////f////390v+p+////f/9/2n3p/onA")
+}, {
+"aabb": AABB(-0.58, 0.7584, -0.0887, 0.0171, 0.0215, 0.2493),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+/////v/9//7////+/////v///////f/+//3//v////7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATAA8ADwAVAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABYAFgAQAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_nchq3"),
+"name": "Material25",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AABLQAAA4wAAAEtAAAAAAAAAS0AAAJ8A//8AALD/AAD//wAAsP8AAP//AACw/58AAAAAALD/AAAAAAAAsP8AAAAAAACw/58A//9LQAAA4wD//0tAAAAAAP//S0AAAJ8AAAD//04A4wAAAP//TgDiQAAA//9OAJ8A//+zv///4kD//7O///8AAP//s7///58A/////04A4wD/////TgDiQP////9OAJ8AAACzv///4kAAALO///8AAAAAs7///58A////f02///9O/1fA/3+efk2///+mv05//3+efk2///9O/1fA////f02///+mv05/////f////39O/1fA////f/9/nn6mv05/////f////3+mv05/////f/9/nn5O/1fA")
+}, {
+"aabb": AABB(-0.58, 1.1625, -0.0887, 0.0171, 0.0160999, 0.249),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_cpx26"),
+"name": "Material26",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 1.0242, -0.0892, 0.0171, 0.0239, 0.2494),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3////9//7////+//3//v////7////+//////////7//f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADAASABAAEAAWAAwAAAAJABMAEwANAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_41ej4"),
+"name": "Material27",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAIMARwEAAAAAgwAAAAAAAACDAOcA//+LU///AAD//4tT//8AAP//i1P//+cAAACLU///AAAAAItT//8AAAAAi1P//+cA//8AAIMASQH//wAAgwAAAP//AACDAOcAAABzrAAAuT4AAHOsAABIAQAAc6wAAOcA/////3v/AAD/////e/+5Pv////97/+cA//9zrAAAuT7//3OsAABHAf//c6wAAOcAAAD//3v/AAAAAP//e/+5PgAA//97/+cAAAD/f/9/AEF/QP6A/3/zgf9/AEH+AIA//3/7gf9/AEF/QP6AAAD/f/9/AEH+AIA/////fwAA/39/QP6A/3/zgf///3/+AIA/////fwAA/3/+AIA//3/zgf///39/QP6A")
+}, {
+"aabb": AABB(-0.58, 1.4368, -0.0887, 0.0171, 0.0161999, 0.249),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3//v/9///////+//3//v////7////+/////v///////f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADQATABAAEAAWAA0AAAAJABIAEgAMAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_fhfpd"),
+"name": "Material28",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA//8AAP//AAD//wAAAAAAAP//AAAAAAAA//8AAAAAAAD//wAA//8AAAAAAAD//wAAAAAAAP//AAAAAAAAAAD//wAAAAAAAP//AAD/PwAA//8AAAAA////////AAD/////////P////////wAA/////wAAAAD/////AAD/P/////8AAAAAAAD/////AAAAAP//////PwAA/////wAA////f/9//z//P/9//3//f/9//z//v/9//3//f/9//z//P/9/////f/9//z//v/9/////f////3//P/9//3//f////3//v/9/////f////3//v/9//3//f////3//P/9/")
+}, {
+"aabb": AABB(-0.58, 1.2985, -0.0892, 0.0171, 0.024, 0.2494),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3////9//7////+//3//v////7////+//////////7//f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADAASABAAEAAWAAwAAAAJABMAEwANAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_npbcn"),
+"name": "Material29",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAIMARgEAAAAAgwAAAAAAAACDAOcA//8zU///AAD//zNT//8AAP//M1P//+cAAAAzU///AAAAADNT//8AAAAAM1P//+cA//8AAIMARwH//wAAgwAAAP//AACDAOcAAADMrAAAuT4AAMysAABIAQAAzKwAAOcA/////3v/AAD/////e/+5Pv////97/+cA///MrAAAuT7//8ysAABGAf//zKwAAOcAAAD//3v/AAAAAP//e/+5PgAA//97/+cAAAD/f/9/AEF/QP6A/3/6gf9/AEH+AIA//3/4gf9/AEF/QP6AAAD/f/9/AEH+AIA/////fwAA/39/QP6A/3/4gf///3/+AIA/////fwAA/3/+AIA//3/6gf///39/QP6A")
+}, {
+"aabb": AABB(-0.58, 1.5873, -0.0892, 0.0171, 0.0239, 0.2494),
+"attribute_data": PackedByteArray("/3///////////////3////9//7///////////////7//f/////////9/////f////3////9//7////+//3//v////7////+//////////7//f/+/////v/9//7//f/+/"),
+"format": 34896613399,
+"index_count": 36,
+"index_data": PackedByteArray("AQAHAAQABAAKAAEADAASABAAEAAWAAwAAAAJABMAEwANAAAACwAFABEAEQAUAAsAAwAGABUAFQAPAAMACAACAA4ADgAXAAgA"),
+"material": SubResource("StandardMaterial3D_3a1sf"),
+"name": "Material31",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 24,
+"vertex_data": PackedByteArray("AAAAAIMARwEAAAAAgwAAAAAAAACDAOcA//+MU///AAD//4xT//8AAP//jFP//+cAAACMU///AAAAAIxT//8AAAAAjFP//+cA//8AAIMASQH//wAAgwAAAP//AACDAOcAAABzrAAAuT4AAHOsAABIAQAAc6wAAOcA/////3v/AAD/////e/+5Pv////97/+cA//9zrAAAuT7//3OsAABHAf//c6wAAOcAAAD//3v/AAAAAP//e/+5PgAA//97/+cAAAD/f/9/AEF/QP6A/3/zgf9/AEH+AIA//3/zgf9/AEF/QP6AAAD/f/9/AEH+AIA/////fwAA/39/QP6A/3/6gf///3/+AIA/////fwAA/3/+AIA//3/zgf///39/QP6A")
+}, {
+"aabb": AABB(-0.58, 2.0045, -0.0887, 0.0171, 0.0162001, 1e-05),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_jfuk6"),
+"name": "Material32",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD///9/////f////3////9/")
+}, {
+"aabb": AABB(-0.58, 2.3061, -0.0887, 0.0171, 0.0162001, 1e-05),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_x1k1l"),
+"name": "Material34",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD///9/////f////3////9/")
+}, {
+"aabb": AABB(-0.58, 2.1678, -0.0892, 0.0171, 0.0162001, 0.000500001),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_2m5r8"),
+"name": "Material35",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//RgH/////AABGAf//AAD//0cBAAD//wAASAEAAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-0.58, 2.5355, -0.0887, 0.0171, 0.0160999, 1e-05),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_oxolg"),
+"name": "Material36",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD///9/////f////3////9/")
+}, {
+"aabb": AABB(-0.58, 2.3972, -0.0892, 0.0171, 0.0160999, 0.000500001),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_6ymuw"),
+"name": "Material37",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//RwH/////AABHAf//AAD//0cBAAD//wAARwEAAP9/AAD/fwAA/38AAP9/")
+}, {
+"aabb": AABB(-0.58, 2.7775, -0.0887, 0.0171, 0.0162001, 1e-05),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_vh3vy"),
+"name": "Material38",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAAAAAAD/////AAAAAP//AAAAAAAAAAD//wAAAAD///9/////f////3////9/")
+}, {
+"aabb": AABB(-0.58, 2.6392, -0.0892, 0.0171, 0.0162001, 0.000500001),
+"attribute_data": PackedByteArray("/3///////7///////3//vw=="),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray("AAACAAEAAQADAAAA"),
+"material": SubResource("StandardMaterial3D_unbc5"),
+"name": "Material39",
+"primitive": 3,
+"uv_scale": Vector4(2, 4, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("AAAAAP//RgH/////AABGAf//AAD//0cBAAD//wAASAEAAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_sipco")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_scpqw"]
+data = PackedVector3Array(0.0589, 1.6147, 0.1821, 0.1812, 1.6484, 0.6138, 0.0478, 1.5684, 0.6296, 0.0589, 1.6147, 0.1821, 0.2998, 1.7242, 0.546, 0.1812, 1.6484, 0.6138, 0.0589, 1.6147, 0.1821, 0.3894, 1.7869, 0.4343, 0.2998, 1.7242, 0.546, 0.0589, 1.6147, 0.1821, 0.4391, 1.8288, 0.2922, 0.3894, 1.7869, 0.4343, 0.0589, 1.6147, 0.1821, 0.4429, 1.8448, 0.1367, 0.4391, 1.8288, 0.2922, 0.0589, 1.6147, 0.1821, 0.4004, 1.8331, -0.0132, 0.4429, 1.8448, 0.1367, 0.0589, 1.6147, 0.1821, 0.3167, 1.7951, -0.1396, 0.4004, 1.8331, -0.0132, 0.0589, 1.6147, 0.1821, 0.2019, 1.7353, -0.2272, 0.3167, 1.7951, -0.1396, 0.0589, 1.6147, 0.1821, 0.0699, 1.661, -0.2654, 0.2019, 1.7353, -0.2272, 0.0589, 1.6147, 0.1821, -0.2717, 1.4425, -0.0701, -0.1821, 1.5052, -0.1819, 0.0589, 1.6147, 0.1821, -0.3213, 1.4006, 0.072, -0.2717, 1.4425, -0.0701, 0.0589, 1.6147, 0.1821, -0.3252, 1.3846, 0.2274, -0.3213, 1.4006, 0.072, 0.0589, 1.6147, 0.1821, -0.2827, 1.3962, 0.3773, -0.3252, 1.3846, 0.2274, 0.0589, 1.6147, 0.1821, -0.199, 1.4343, 0.5037, -0.2827, 1.3962, 0.3773, 0.0589, 1.6147, 0.1821, -0.0842, 1.4941, 0.5913, -0.199, 1.4343, 0.5037, 0.0589, 1.6147, 0.1821, 0.0478, 1.5684, 0.6296, -0.0842, 1.4941, 0.5913, 0.0478, 1.5684, 0.6296, 0.3836, 1.3047, 0.5833, 0.2502, 1.2248, 0.599, 0.0478, 1.5684, 0.6296, 0.1812, 1.6484, 0.6138, 0.3836, 1.3047, 0.5833, 0.1812, 1.6484, 0.6138, 0.5022, 1.3805, 0.5155, 0.3836, 1.3047, 0.5833, 0.1812, 1.6484, 0.6138, 0.2998, 1.7242, 0.546, 0.5022, 1.3805, 0.5155, 0.2998, 1.7242, 0.546, 0.5917, 1.4432, 0.4037, 0.5022, 1.3805, 0.5155, 0.2998, 1.7242, 0.546, 0.3894, 1.7869, 0.4343, 0.5917, 1.4432, 0.4037, 0.3894, 1.7869, 0.4343, 0.6414, 1.4851, 0.2616, 0.5917, 1.4432, 0.4037, 0.3894, 1.7869, 0.4343, 0.4391, 1.8288, 0.2922, 0.6414, 1.4851, 0.2616, 0.4391, 1.8288, 0.2922, 0.6452, 1.5012, 0.1062, 0.6414, 1.4851, 0.2616, 0.4391, 1.8288, 0.2922, 0.4429, 1.8448, 0.1367, 0.6452, 1.5012, 0.1062, 0.4429, 1.8448, 0.1367, 0.6028, 1.4895, -0.0437, 0.6452, 1.5012, 0.1062, 0.4429, 1.8448, 0.1367, 0.4004, 1.8331, -0.0132, 0.6028, 1.4895, -0.0437, 0.4004, 1.8331, -0.0132, 0.5191, 1.4514, -0.1701, 0.6028, 1.4895, -0.0437, 0.4004, 1.8331, -0.0132, 0.3167, 1.7951, -0.1396, 0.5191, 1.4514, -0.1701, 0.3167, 1.7951, -0.1396, 0.4043, 1.3916, -0.2577, 0.5191, 1.4514, -0.1701, 0.3167, 1.7951, -0.1396, 0.2019, 1.7353, -0.2272, 0.4043, 1.3916, -0.2577, 0.2019, 1.7353, -0.2272, 0.2722, 1.3173, -0.296, 0.4043, 1.3916, -0.2577, 0.2019, 1.7353, -0.2272, 0.0699, 1.661, -0.2654, 0.2722, 1.3173, -0.296, 0.0699, 1.661, -0.2654, 0.1389, 1.2374, -0.2802, 0.2722, 1.3173, -0.296, -0.1821, 1.5052, -0.1819, -0.0693, 1.0988, -0.1007, 0.0203, 1.1615, -0.2124, -0.1821, 1.5052, -0.1819, -0.2717, 1.4425, -0.0701, -0.0693, 1.0988, -0.1007, -0.2717, 1.4425, -0.0701, -0.119, 1.0569, 0.0414, -0.0693, 1.0988, -0.1007, -0.2717, 1.4425, -0.0701, -0.3213, 1.4006, 0.072, -0.119, 1.0569, 0.0414, -0.3213, 1.4006, 0.072, -0.1228, 1.0409, 0.1968, -0.119, 1.0569, 0.0414, -0.3213, 1.4006, 0.072, -0.3252, 1.3846, 0.2274, -0.1228, 1.0409, 0.1968, -0.3252, 1.3846, 0.2274, -0.0803, 1.0526, 0.3468, -0.1228, 1.0409, 0.1968, -0.3252, 1.3846, 0.2274, -0.2827, 1.3962, 0.3773, -0.0803, 1.0526, 0.3468, -0.2827, 1.3962, 0.3773, 0.0034, 1.0906, 0.4732, -0.0803, 1.0526, 0.3468, -0.2827, 1.3962, 0.3773, -0.199, 1.4343, 0.5037, 0.0034, 1.0906, 0.4732, -0.199, 1.4343, 0.5037, 0.1181, 1.1504, 0.5608, 0.0034, 1.0906, 0.4732, -0.199, 1.4343, 0.5037, -0.0842, 1.4941, 0.5913, 0.1181, 1.1504, 0.5608, -0.0842, 1.4941, 0.5913, 0.2502, 1.2248, 0.599, 0.1181, 1.1504, 0.5608, -0.0842, 1.4941, 0.5913, 0.0478, 1.5684, 0.6296, 0.2502, 1.2248, 0.599, 0.2502, 1.2248, 0.599, 0.5859, 0.961, 0.5527, 0.4525, 0.8811, 0.5685, 0.2502, 1.2248, 0.599, 0.3836, 1.3047, 0.5833, 0.5859, 0.961, 0.5527, 0.3836, 1.3047, 0.5833, 0.7045, 1.0369, 0.4849, 0.5859, 0.961, 0.5527, 0.3836, 1.3047, 0.5833, 0.5022, 1.3805, 0.5155, 0.7045, 1.0369, 0.4849, 0.5022, 1.3805, 0.5155, 0.7941, 1.0995, 0.3732, 0.7045, 1.0369, 0.4849, 0.5022, 1.3805, 0.5155, 0.5917, 1.4432, 0.4037, 0.7941, 1.0995, 0.3732, 0.5917, 1.4432, 0.4037, 0.8438, 1.1414, 0.2311, 0.7941, 1.0995, 0.3732, 0.5917, 1.4432, 0.4037, 0.6414, 1.4851, 0.2616, 0.8438, 1.1414, 0.2311, 0.6414, 1.4851, 0.2616, 0.8476, 1.1575, 0.0757, 0.8438, 1.1414, 0.2311, 0.6414, 1.4851, 0.2616, 0.6452, 1.5012, 0.1062, 0.8476, 1.1575, 0.0757, 0.6452, 1.5012, 0.1062, 0.8051, 1.1458, -0.0743, 0.8476, 1.1575, 0.0757, 0.6452, 1.5012, 0.1062, 0.6028, 1.4895, -0.0437, 0.8051, 1.1458, -0.0743, 0.6028, 1.4895, -0.0437, 0.7214, 1.1077, -0.2007, 0.8051, 1.1458, -0.0743, 0.6028, 1.4895, -0.0437, 0.5191, 1.4514, -0.1701, 0.7214, 1.1077, -0.2007, 0.5191, 1.4514, -0.1701, 0.6066, 1.0479, -0.2883, 0.7214, 1.1077, -0.2007, 0.5191, 1.4514, -0.1701, 0.4043, 1.3916, -0.2577, 0.6066, 1.0479, -0.2883, 0.4043, 1.3916, -0.2577, 0.4746, 0.9736, -0.3265, 0.6066, 1.0479, -0.2883, 0.4043, 1.3916, -0.2577, 0.2722, 1.3173, -0.296, 0.4746, 0.9736, -0.3265, 0.2722, 1.3173, -0.296, 0.3412, 0.8937, -0.3108, 0.4746, 0.9736, -0.3265, 0.2722, 1.3173, -0.296, 0.1389, 1.2374, -0.2802, 0.3412, 0.8937, -0.3108, 0.1389, 1.2374, -0.2802, 0.2226, 0.8178, -0.2429, 0.3412, 0.8937, -0.3108, 0.1389, 1.2374, -0.2802, 0.0203, 1.1615, -0.2124, 0.2226, 0.8178, -0.2429, 0.0203, 1.1615, -0.2124, 0.1331, 0.7551, -0.1312, 0.2226, 0.8178, -0.2429, 0.0203, 1.1615, -0.2124, -0.0693, 1.0988, -0.1007, 0.1331, 0.7551, -0.1312, -0.0693, 1.0988, -0.1007, 0.0834, 0.7132, 0.0109, 0.1331, 0.7551, -0.1312, -0.0693, 1.0988, -0.1007, -0.119, 1.0569, 0.0414, 0.0834, 0.7132, 0.0109, -0.119, 1.0569, 0.0414, 0.0795, 0.6972, 0.1663, 0.0834, 0.7132, 0.0109, -0.119, 1.0569, 0.0414, -0.1228, 1.0409, 0.1968, 0.0795, 0.6972, 0.1663, -0.1228, 1.0409, 0.1968, 0.122, 0.7089, 0.3162, 0.0795, 0.6972, 0.1663, -0.1228, 1.0409, 0.1968, -0.0803, 1.0526, 0.3468, 0.122, 0.7089, 0.3162, -0.0803, 1.0526, 0.3468, 0.2057, 0.7469, 0.4426, 0.122, 0.7089, 0.3162, -0.0803, 1.0526, 0.3468, 0.0034, 1.0906, 0.4732, 0.2057, 0.7469, 0.4426, 0.0034, 1.0906, 0.4732, 0.3205, 0.8067, 0.5302, 0.2057, 0.7469, 0.4426, 0.0034, 1.0906, 0.4732, 0.1181, 1.1504, 0.5608, 0.3205, 0.8067, 0.5302, 0.1181, 1.1504, 0.5608, 0.4525, 0.8811, 0.5685, 0.3205, 0.8067, 0.5302, 0.1181, 1.1504, 0.5608, 0.2502, 1.2248, 0.599, 0.4525, 0.8811, 0.5685, 0.4525, 0.8811, 0.5685, 0.7883, 0.6173, 0.5222, 0.6549, 0.5374, 0.5379, 0.4525, 0.8811, 0.5685, 0.5859, 0.961, 0.5527, 0.7883, 0.6173, 0.5222, 0.5859, 0.961, 0.5527, 0.9069, 0.6932, 0.4544, 0.7883, 0.6173, 0.5222, 0.5859, 0.961, 0.5527, 0.7045, 1.0369, 0.4849, 0.9069, 0.6932, 0.4544, 0.7045, 1.0369, 0.4849, 0.9964, 0.7558, 0.3427, 0.9069, 0.6932, 0.4544, 0.7045, 1.0369, 0.4849, 0.7941, 1.0995, 0.3732, 0.9964, 0.7558, 0.3427, 0.7941, 1.0995, 0.3732, 1.0461, 0.7977, 0.2005, 0.9964, 0.7558, 0.3427, 0.7941, 1.0995, 0.3732, 0.8438, 1.1414, 0.2311, 1.0461, 0.7977, 0.2005, 0.8438, 1.1414, 0.2311, 1.05, 0.8138, 0.0451, 1.0461, 0.7977, 0.2005, 0.8438, 1.1414, 0.2311, 0.8476, 1.1575, 0.0757, 1.05, 0.8138, 0.0451, 0.8476, 1.1575, 0.0757, 1.0075, 0.8021, -0.1048, 1.05, 0.8138, 0.0451, 0.8476, 1.1575, 0.0757, 0.8051, 1.1458, -0.0743, 1.0075, 0.8021, -0.1048, 0.8051, 1.1458, -0.0743, 0.9238, 0.764, -0.2312, 1.0075, 0.8021, -0.1048, 0.8051, 1.1458, -0.0743, 0.7214, 1.1077, -0.2007, 0.9238, 0.764, -0.2312, 0.7214, 1.1077, -0.2007, 0.809, 0.7042, -0.3188, 0.9238, 0.764, -0.2312, 0.7214, 1.1077, -0.2007, 0.6066, 1.0479, -0.2883, 0.809, 0.7042, -0.3188, 0.6066, 1.0479, -0.2883, 0.677, 0.6299, -0.357, 0.809, 0.7042, -0.3188, 0.6066, 1.0479, -0.2883, 0.4746, 0.9736, -0.3265, 0.677, 0.6299, -0.357, 0.4746, 0.9736, -0.3265, 0.5436, 0.55, -0.3413, 0.677, 0.6299, -0.357, 0.4746, 0.9736, -0.3265, 0.3412, 0.8937, -0.3108, 0.5436, 0.55, -0.3413, 0.3412, 0.8937, -0.3108, 0.425, 0.4741, -0.2735, 0.5436, 0.55, -0.3413, 0.3412, 0.8937, -0.3108, 0.2226, 0.8178, -0.2429, 0.425, 0.4741, -0.2735, 0.2226, 0.8178, -0.2429, 0.3354, 0.4115, -0.1618, 0.425, 0.4741, -0.2735, 0.2226, 0.8178, -0.2429, 0.1331, 0.7551, -0.1312, 0.3354, 0.4115, -0.1618, 0.1331, 0.7551, -0.1312, 0.2857, 0.3696, -0.0196, 0.3354, 0.4115, -0.1618, 0.1331, 0.7551, -0.1312, 0.0834, 0.7132, 0.0109, 0.2857, 0.3696, -0.0196, 0.0834, 0.7132, 0.0109, 0.2819, 0.3535, 0.1358, 0.2857, 0.3696, -0.0196, 0.0834, 0.7132, 0.0109, 0.0795, 0.6972, 0.1663, 0.2819, 0.3535, 0.1358, 0.0795, 0.6972, 0.1663, 0.3244, 0.3652, 0.2857, 0.2819, 0.3535, 0.1358, 0.0795, 0.6972, 0.1663, 0.122, 0.7089, 0.3162, 0.3244, 0.3652, 0.2857, 0.122, 0.7089, 0.3162, 0.4081, 0.4032, 0.4121, 0.3244, 0.3652, 0.2857, 0.122, 0.7089, 0.3162, 0.2057, 0.7469, 0.4426, 0.4081, 0.4032, 0.4121, 0.2057, 0.7469, 0.4426, 0.5229, 0.463, 0.4997, 0.4081, 0.4032, 0.4121, 0.2057, 0.7469, 0.4426, 0.3205, 0.8067, 0.5302, 0.5229, 0.463, 0.4997, 0.3205, 0.8067, 0.5302, 0.6549, 0.5374, 0.5379, 0.5229, 0.463, 0.4997, 0.3205, 0.8067, 0.5302, 0.4525, 0.8811, 0.5685, 0.6549, 0.5374, 0.5379, 0.9069, 0.6932, 0.4544, 0.9964, 0.7558, 0.3427, 1.1988, 0.4121, 0.3121, 0.9964, 0.7558, 0.3427, 1.2485, 0.454, 0.17, 1.1988, 0.4121, 0.3121, 0.9964, 0.7558, 0.3427, 1.0461, 0.7977, 0.2005, 1.2485, 0.454, 0.17, 1.0461, 0.7977, 0.2005, 1.2523, 0.4701, 0.0146, 1.2485, 0.454, 0.17, 1.0461, 0.7977, 0.2005, 1.05, 0.8138, 0.0451, 1.2523, 0.4701, 0.0146, 1.05, 0.8138, 0.0451, 1.2098, 0.4584, -0.1354, 1.2523, 0.4701, 0.0146, 1.05, 0.8138, 0.0451, 1.0075, 0.8021, -0.1048, 1.2098, 0.4584, -0.1354, 1.0075, 0.8021, -0.1048, 1.1261, 0.4204, -0.2618, 1.2098, 0.4584, -0.1354, 1.0075, 0.8021, -0.1048, 0.9238, 0.764, -0.2312, 1.1261, 0.4204, -0.2618, 0.9238, 0.764, -0.2312, 1.0114, 0.3606, -0.3493, 1.1261, 0.4204, -0.2618, 0.9238, 0.764, -0.2312, 0.809, 0.7042, -0.3188, 1.0114, 0.3606, -0.3493, 0.809, 0.7042, -0.3188, 0.8793, 0.2862, -0.3876, 1.0114, 0.3606, -0.3493, 0.809, 0.7042, -0.3188, 0.677, 0.6299, -0.357, 0.8793, 0.2862, -0.3876, 1.1988, 0.4121, 0.3121, 1.4508, 0.1103, 0.1394, 1.4012, 0.0685, 0.2816, 1.1988, 0.4121, 0.3121, 1.2485, 0.454, 0.17, 1.4508, 0.1103, 0.1394, 1.2485, 0.454, 0.17, 1.4547, 0.1264, -0.016, 1.4508, 0.1103, 0.1394, 1.2485, 0.454, 0.17, 1.2523, 0.4701, 0.0146, 1.4547, 0.1264, -0.016, 1.2523, 0.4701, 0.0146, 1.4122, 0.1147, -0.1659, 1.4547, 0.1264, -0.016, 1.2523, 0.4701, 0.0146, 1.2098, 0.4584, -0.1354, 1.4122, 0.1147, -0.1659, 1.2098, 0.4584, -0.1354, 1.3285, 0.0767, -0.2923, 1.4122, 0.1147, -0.1659, 1.2098, 0.4584, -0.1354, 1.1261, 0.4204, -0.2618, 1.3285, 0.0767, -0.2923, 1.1261, 0.4204, -0.2618, 1.2137, 0.0169, -0.3799, 1.3285, 0.0767, -0.2923, 1.1261, 0.4204, -0.2618, 1.0114, 0.3606, -0.3493, 1.2137, 0.0169, -0.3799, 1.0114, 0.3606, -0.3493, 1.0817, -0.0575, -0.4181, 1.2137, 0.0169, -0.3799, 1.0114, 0.3606, -0.3493, 0.8793, 0.2862, -0.3876, 1.0817, -0.0575, -0.4181, 0.4639, 0.0363, 0.4744, 0.4639, 0.0363, 0.5444, 0.5339, 0.0363, 0.5444, 0.5339, 0.0363, 0.5444, 0.5339, 0.0363, 0.4744, 0.4639, 0.0363, 0.4744, -0.441, 0.0363, 0.4997, -0.441, 0.0363, 0.5697, -0.371, 0.0363, 0.5697, -0.371, 0.0363, 0.5697, -0.371, 0.0363, 0.4997, -0.441, 0.0363, 0.4997, -0.441, 2.0363, 0.4997, -0.371, 2.0363, 0.4997, -0.371, 2.0363, 0.5697, -0.371, 2.0363, 0.5697, -0.441, 2.0363, 0.5697, -0.441, 2.0363, 0.4997, -0.441, 0.0363, 0.4997, -0.371, 0.0363, 0.4997, -0.371, 2.0363, 0.4997, -0.371, 2.0363, 0.4997, -0.441, 2.0363, 0.4997, -0.441, 0.0363, 0.4997, -0.371, 0.0363, 0.4997, -0.371, 0.0363, 0.5697, -0.371, 2.0363, 0.5697, -0.371, 2.0363, 0.5697, -0.371, 2.0363, 0.4997, -0.371, 0.0363, 0.4997, -0.371, 0.0363, 0.5697, -0.441, 0.0363, 0.5697, -0.441, 2.0363, 0.5697, -0.441, 2.0363, 0.5697, -0.371, 2.0363, 0.5697, -0.371, 0.0363, 0.5697, -0.441, 0.0363, 0.5697, -0.441, 0.0363, 0.4997, -0.441, 2.0363, 0.4997, -0.441, 2.0363, 0.4997, -0.441, 2.0363, 0.5697, -0.441, 0.0363, 0.5697, -0.4553, 0.0363, -0.4414, -0.4553, 0.0363, -0.3714, -0.3853, 0.0363, -0.3714, -0.3853, 0.0363, -0.3714, -0.3853, 0.0363, -0.4414, -0.4553, 0.0363, -0.4414, 0.4784, -0.0115, -0.4496, 0.4784, -0.0115, -0.3796, 0.5484, -0.0115, -0.3796, 0.5484, -0.0115, -0.3796, 0.5484, -0.0115, -0.4496, 0.4784, -0.0115, -0.4496, 0.4784, 1.9885, -0.4496, 0.5484, 1.9885, -0.4496, 0.5484, 1.9885, -0.3796, 0.5484, 1.9885, -0.3796, 0.4784, 1.9885, -0.3796, 0.4784, 1.9885, -0.4496, 0.4784, -0.0115, -0.4496, 0.5484, -0.0115, -0.4496, 0.5484, 1.9885, -0.4496, 0.5484, 1.9885, -0.4496, 0.4784, 1.9885, -0.4496, 0.4784, -0.0115, -0.4496, 0.5484, -0.0115, -0.4496, 0.5484, -0.0115, -0.3796, 0.5484, 1.9885, -0.3796, 0.5484, 1.9885, -0.3796, 0.5484, 1.9885, -0.4496, 0.5484, -0.0115, -0.4496, 0.5484, -0.0115, -0.3796, 0.4784, -0.0115, -0.3796, 0.4784, 1.9885, -0.3796, 0.4784, 1.9885, -0.3796, 0.5484, 1.9885, -0.3796, 0.5484, -0.0115, -0.3796, 0.4784, -0.0115, -0.3796, 0.4784, -0.0115, -0.4496, 0.4784, 1.9885, -0.4496, 0.4784, 1.9885, -0.4496, 0.4784, 1.9885, -0.3796, 0.4784, -0.0115, -0.3796, -0.4553, 0.0713, -0.4064, -0.4553, 0.0013, -0.4064, -0.3853, 0.0013, -0.4064, -0.3853, 0.0013, -0.4064, -0.3853, 0.0713, -0.4064, -0.4553, 0.0713, -0.4064, -0.4553, 0.0713, 0.5608, -0.3853, 0.0713, 0.5608, -0.3853, 0.0013, 0.5608, -0.3853, 0.0013, 0.5608, -0.4553, 0.0013, 0.5608, -0.4553, 0.0713, 0.5608, -0.4553, 0.0713, -0.4064, -0.3853, 0.0713, -0.4064, -0.3853, 0.0713, 0.5608, -0.3853, 0.0713, 0.5608, -0.4553, 0.0713, 0.5608, -0.4553, 0.0713, -0.4064, -0.3853, 0.0713, -0.4064, -0.3853, 0.0013, -0.4064, -0.3853, 0.0013, 0.5608, -0.3853, 0.0013, 0.5608, -0.3853, 0.0713, 0.5608, -0.3853, 0.0713, -0.4064, -0.3853, 0.0013, -0.4064, -0.4553, 0.0013, -0.4064, -0.4553, 0.0013, 0.5608, -0.4553, 0.0013, 0.5608, -0.3853, 0.0013, 0.5608, -0.3853, 0.0013, -0.4064, -0.4553, 0.0013, -0.4064, -0.4553, 0.0713, -0.4064, -0.4553, 0.0713, 0.5608, -0.4553, 0.0713, 0.5608, -0.4553, 0.0013, 0.5608, -0.4553, 0.0013, -0.4064, -0.4199, 0.0713, -0.3714, -0.4199, 0.0013, -0.3714, -0.4207, 0.0013, -0.4414, -0.4207, 0.0013, -0.4414, -0.4207, 0.0713, -0.4414, -0.4199, 0.0713, -0.3714, 0.5472, 0.0713, -0.383, 0.5464, 0.0713, -0.453, 0.5464, 0.0013, -0.453, 0.5464, 0.0013, -0.453, 0.5472, 0.0013, -0.383, 0.5472, 0.0713, -0.383, -0.4199, 0.0713, -0.3714, -0.4207, 0.0713, -0.4414, 0.5464, 0.0713, -0.453, 0.5464, 0.0713, -0.453, 0.5472, 0.0713, -0.383, -0.4199, 0.0713, -0.3714, -0.4207, 0.0713, -0.4414, -0.4207, 0.0013, -0.4414, 0.5464, 0.0013, -0.453, 0.5464, 0.0013, -0.453, 0.5464, 0.0713, -0.453, -0.4207, 0.0713, -0.4414, -0.4207, 0.0013, -0.4414, -0.4199, 0.0013, -0.3714, 0.5472, 0.0013, -0.383, 0.5472, 0.0013, -0.383, 0.5464, 0.0013, -0.453, -0.4207, 0.0013, -0.4414, -0.4199, 0.0013, -0.3714, -0.4199, 0.0713, -0.3714, 0.5472, 0.0713, -0.383, 0.5472, 0.0713, -0.383, 0.5472, 0.0013, -0.383, -0.4199, 0.0013, -0.3714, 0.5293, 0.0713, 0.4645, 0.5293, 0.0013, 0.4645, 0.5309, 0.0013, 0.5345, 0.5309, 0.0013, 0.5345, 0.5309, 0.0713, 0.5345, 0.5293, 0.0713, 0.4645, -0.4377, 0.0713, 0.4868, -0.4361, 0.0713, 0.5568, -0.4361, 0.0013, 0.5568, -0.4361, 0.0013, 0.5568, -0.4377, 0.0013, 0.4868, -0.4377, 0.0713, 0.4868, 0.5293, 0.0713, 0.4645, 0.5309, 0.0713, 0.5345, -0.4361, 0.0713, 0.5568, -0.4361, 0.0713, 0.5568, -0.4377, 0.0713, 0.4868, 0.5293, 0.0713, 0.4645, 0.5309, 0.0713, 0.5345, 0.5309, 0.0013, 0.5345, -0.4361, 0.0013, 0.5568, -0.4361, 0.0013, 0.5568, -0.4361, 0.0713, 0.5568, 0.5309, 0.0713, 0.5345, 0.5309, 0.0013, 0.5345, 0.5293, 0.0013, 0.4645, -0.4377, 0.0013, 0.4868, -0.4377, 0.0013, 0.4868, -0.4361, 0.0013, 0.5568, 0.5309, 0.0013, 0.5345, 0.5293, 0.0013, 0.4645, 0.5293, 0.0713, 0.4645, -0.4377, 0.0713, 0.4868, -0.4377, 0.0713, 0.4868, -0.4377, 0.0013, 0.4868, 0.5293, 0.0013, 0.4645, 0.5651, 0.0713, 0.4991, 0.5651, 0.0013, 0.4991, 0.4951, 0.0013, 0.4998, 0.4951, 0.0013, 0.4998, 0.4951, 0.0713, 0.4998, 0.5651, 0.0713, 0.4991, 0.5544, 0.0713, -0.4681, 0.4844, 0.0713, -0.4673, 0.4844, 0.0013, -0.4673, 0.4844, 0.0013, -0.4673, 0.5544, 0.0013, -0.4681, 0.5544, 0.0713, -0.4681, 0.5651, 0.0713, 0.4991, 0.4951, 0.0713, 0.4998, 0.4844, 0.0713, -0.4673, 0.4844, 0.0713, -0.4673, 0.5544, 0.0713, -0.4681, 0.5651, 0.0713, 0.4991, 0.4951, 0.0713, 0.4998, 0.4951, 0.0013, 0.4998, 0.4844, 0.0013, -0.4673, 0.4844, 0.0013, -0.4673, 0.4844, 0.0713, -0.4673, 0.4951, 0.0713, 0.4998, 0.4951, 0.0013, 0.4998, 0.5651, 0.0013, 0.4991, 0.5544, 0.0013, -0.4681, 0.5544, 0.0013, -0.4681, 0.4844, 0.0013, -0.4673, 0.4951, 0.0013, 0.4998, 0.5651, 0.0013, 0.4991, 0.5651, 0.0713, 0.4991, 0.5544, 0.0713, -0.4681, 0.5544, 0.0713, -0.4681, 0.5544, 0.0013, -0.4681, 0.5651, 0.0013, 0.4991, -0.4553, 0.6225, -0.4064, -0.4553, 0.5525, -0.4064, -0.3853, 0.5525, -0.4064, -0.3853, 0.5525, -0.4064, -0.3853, 0.6225, -0.4064, -0.4553, 0.6225, -0.4064, -0.4553, 0.6225, 0.5608, -0.3853, 0.6225, 0.5608, -0.3853, 0.5525, 0.5608, -0.3853, 0.5525, 0.5608, -0.4553, 0.5525, 0.5608, -0.4553, 0.6225, 0.5608, -0.4553, 0.6225, -0.4064, -0.3853, 0.6225, -0.4064, -0.3853, 0.6225, 0.5608, -0.3853, 0.6225, 0.5608, -0.4553, 0.6225, 0.5608, -0.4553, 0.6225, -0.4064, -0.3853, 0.6225, -0.4064, -0.3853, 0.5525, -0.4064, -0.3853, 0.5525, 0.5608, -0.3853, 0.5525, 0.5608, -0.3853, 0.6225, 0.5608, -0.3853, 0.6225, -0.4064, -0.3853, 0.5525, -0.4064, -0.4553, 0.5525, -0.4064, -0.4553, 0.5525, 0.5608, -0.4553, 0.5525, 0.5608, -0.3853, 0.5525, 0.5608, -0.3853, 0.5525, -0.4064, -0.4553, 0.5525, -0.4064, -0.4553, 0.6225, -0.4064, -0.4553, 0.6225, 0.5608, -0.4553, 0.6225, 0.5608, -0.4553, 0.5525, 0.5608, -0.4553, 0.5525, -0.4064, 0.5293, 0.6225, 0.4645, 0.5293, 0.5525, 0.4645, 0.5309, 0.5525, 0.5345, 0.5309, 0.5525, 0.5345, 0.5309, 0.6225, 0.5345, 0.5293, 0.6225, 0.4645, -0.4377, 0.6225, 0.4868, -0.4361, 0.6225, 0.5568, -0.4361, 0.5525, 0.5568, -0.4361, 0.5525, 0.5568, -0.4377, 0.5525, 0.4868, -0.4377, 0.6225, 0.4868, 0.5293, 0.6225, 0.4645, 0.5309, 0.6225, 0.5345, -0.4361, 0.6225, 0.5568, -0.4361, 0.6225, 0.5568, -0.4377, 0.6225, 0.4868, 0.5293, 0.6225, 0.4645, 0.5309, 0.6225, 0.5345, 0.5309, 0.5525, 0.5345, -0.4361, 0.5525, 0.5568, -0.4361, 0.5525, 0.5568, -0.4361, 0.6225, 0.5568, 0.5309, 0.6225, 0.5345, 0.5309, 0.5525, 0.5345, 0.5293, 0.5525, 0.4645, -0.4377, 0.5525, 0.4868, -0.4377, 0.5525, 0.4868, -0.4361, 0.5525, 0.5568, 0.5309, 0.5525, 0.5345, 0.5293, 0.5525, 0.4645, 0.5293, 0.6225, 0.4645, -0.4377, 0.6225, 0.4868, -0.4377, 0.6225, 0.4868, -0.4377, 0.5525, 0.4868, 0.5293, 0.5525, 0.4645, -0.4199, 0.6225, -0.3714, -0.4199, 0.5525, -0.3714, -0.4207, 0.5525, -0.4414, -0.4207, 0.5525, -0.4414, -0.4207, 0.6225, -0.4414, -0.4199, 0.6225, -0.3714, 0.5472, 0.6225, -0.383, 0.5464, 0.6225, -0.453, 0.5464, 0.5525, -0.453, 0.5464, 0.5525, -0.453, 0.5472, 0.5525, -0.383, 0.5472, 0.6225, -0.383, -0.4199, 0.6225, -0.3714, -0.4207, 0.6225, -0.4414, 0.5464, 0.6225, -0.453, 0.5464, 0.6225, -0.453, 0.5472, 0.6225, -0.383, -0.4199, 0.6225, -0.3714, -0.4207, 0.6225, -0.4414, -0.4207, 0.5525, -0.4414, 0.5464, 0.5525, -0.453, 0.5464, 0.5525, -0.453, 0.5464, 0.6225, -0.453, -0.4207, 0.6225, -0.4414, -0.4207, 0.5525, -0.4414, -0.4199, 0.5525, -0.3714, 0.5472, 0.5525, -0.383, 0.5472, 0.5525, -0.383, 0.5464, 0.5525, -0.453, -0.4207, 0.5525, -0.4414, -0.4199, 0.5525, -0.3714, -0.4199, 0.6225, -0.3714, 0.5472, 0.6225, -0.383, 0.5472, 0.6225, -0.383, 0.5472, 0.5525, -0.383, -0.4199, 0.5525, -0.3714, -0.5657, 0, -0.0942, -0.5657, 0, -0.0642, -0.5357, 0, -0.0642, -0.5357, 0, -0.0642, -0.5357, 0, -0.0942, -0.5657, 0, -0.0942, -0.5657, 2.848, -0.0942, -0.5357, 2.848, -0.0942, -0.5357, 2.848, -0.0642, -0.5357, 2.848, -0.0642, -0.5657, 2.848, -0.0642, -0.5657, 2.848, -0.0942, -0.5657, 0, -0.0942, -0.5357, 0, -0.0942, -0.5357, 2.848, -0.0942, -0.5357, 2.848, -0.0942, -0.5657, 2.848, -0.0942, -0.5657, 0, -0.0942, -0.5357, 0, -0.0942, -0.5357, 0, -0.0642, -0.5357, 2.848, -0.0642, -0.5357, 2.848, -0.0642, -0.5357, 2.848, -0.0942, -0.5357, 0, -0.0942, -0.5357, 0, -0.0642, -0.5657, 0, -0.0642, -0.5657, 2.848, -0.0642, -0.5657, 2.848, -0.0642, -0.5357, 2.848, -0.0642, -0.5357, 0, -0.0642, -0.5657, 0, -0.0642, -0.5657, 0, -0.0942, -0.5657, 2.848, -0.0942, -0.5657, 2.848, -0.0942, -0.5657, 2.848, -0.0642, -0.5657, 0, -0.0642, -0.5657, 0, 0.1279, -0.5657, 0, 0.1579, -0.5357, 0, 0.1579, -0.5357, 0, 0.1579, -0.5357, 0, 0.1279, -0.5657, 0, 0.1279, -0.7594, 0.095, -0.0743, -0.7594, 0.095, 0.1315, -0.546, 0.095, 0.1315, -0.546, 0.095, 0.1315, -0.546, 0.095, -0.0743, -0.7594, 0.095, -0.0743, -0.7594, 0.116, -0.0743, -0.546, 0.116, -0.0743, -0.546, 0.116, 0.1315, -0.546, 0.116, 0.1315, -0.7594, 0.116, 0.1315, -0.7594, 0.116, -0.0743, -0.7594, 0.095, -0.0743, -0.546, 0.095, -0.0743, -0.546, 0.116, -0.0743, -0.546, 0.116, -0.0743, -0.7594, 0.116, -0.0743, -0.7594, 0.095, -0.0743, -0.546, 0.095, -0.0743, -0.546, 0.095, 0.1315, -0.546, 0.116, 0.1315, -0.546, 0.116, 0.1315, -0.546, 0.116, -0.0743, -0.546, 0.095, -0.0743, -0.546, 0.095, 0.1315, -0.7594, 0.095, 0.1315, -0.7594, 0.116, 0.1315, -0.7594, 0.116, 0.1315, -0.546, 0.116, 0.1315, -0.546, 0.095, 0.1315, -0.7594, 0.095, 0.1315, -0.7594, 0.095, -0.0743, -0.7594, 0.116, -0.0743, -0.7594, 0.116, -0.0743, -0.7594, 0.116, 0.1315, -0.7594, 0.095, 0.1315, -0.58, 0.2322, -0.0887, -0.58, 0.2322, 0.1603, -0.5629, 0.2322, 0.1603, -0.5629, 0.2322, 0.1603, -0.5629, 0.2322, -0.0887, -0.58, 0.2322, -0.0887, -0.58, 0.2484, -0.0887, -0.5629, 0.2484, -0.0887, -0.5629, 0.2484, 0.1603, -0.5629, 0.2484, 0.1603, -0.58, 0.2484, 0.1603, -0.58, 0.2484, -0.0887, -0.58, 0.2322, -0.0887, -0.5629, 0.2322, -0.0887, -0.5629, 0.2484, -0.0887, -0.5629, 0.2484, -0.0887, -0.58, 0.2484, -0.0887, -0.58, 0.2322, -0.0887, -0.5629, 0.2322, -0.0887, -0.5629, 0.2322, 0.1603, -0.5629, 0.2484, 0.1603, -0.5629, 0.2484, 0.1603, -0.5629, 0.2484, -0.0887, -0.5629, 0.2322, -0.0887, -0.5629, 0.2322, 0.1603, -0.58, 0.2322, 0.1603, -0.58, 0.2484, 0.1603, -0.58, 0.2484, 0.1603, -0.5629, 0.2484, 0.1603, -0.5629, 0.2322, 0.1603, -0.58, 0.2322, 0.1603, -0.58, 0.2322, -0.0887, -0.58, 0.2484, -0.0887, -0.58, 0.2484, -0.0887, -0.58, 0.2484, 0.1603, -0.58, 0.2322, 0.1603, -0.58, 0.3666, -0.0887, -0.58, 0.3666, 0.1603, -0.5629, 0.3666, 0.1603, -0.5629, 0.3666, 0.1603, -0.5629, 0.3666, -0.0887, -0.58, 0.3666, -0.0887, -0.58, 0.3828, -0.0887, -0.5629, 0.3828, -0.0887, -0.5629, 0.3828, 0.1603, -0.5629, 0.3828, 0.1603, -0.58, 0.3828, 0.1603, -0.58, 0.3828, -0.0887, -0.58, 0.3666, -0.0887, -0.5629, 0.3666, -0.0887, -0.5629, 0.3828, -0.0887, -0.5629, 0.3828, -0.0887, -0.58, 0.3828, -0.0887, -0.58, 0.3666, -0.0887, -0.5629, 0.3666, -0.0887, -0.5629, 0.3666, 0.1603, -0.5629, 0.3828, 0.1603, -0.5629, 0.3828, 0.1603, -0.5629, 0.3828, -0.0887, -0.5629, 0.3666, -0.0887, -0.5629, 0.3666, 0.1603, -0.58, 0.3666, 0.1603, -0.58, 0.3828, 0.1603, -0.58, 0.3828, 0.1603, -0.5629, 0.3828, 0.1603, -0.5629, 0.3666, 0.1603, -0.58, 0.3666, 0.1603, -0.58, 0.3666, -0.0887, -0.58, 0.3828, -0.0887, -0.58, 0.3828, -0.0887, -0.58, 0.3828, 0.1603, -0.58, 0.3666, 0.1603, -0.58, 0.6238, -0.0887, -0.58, 0.6238, 0.1603, -0.5629, 0.6238, 0.1603, -0.5629, 0.6238, 0.1603, -0.5629, 0.6238, -0.0887, -0.58, 0.6238, -0.0887, -0.58, 0.6399, -0.0887, -0.5629, 0.6399, -0.0887, -0.5629, 0.6399, 0.1603, -0.5629, 0.6399, 0.1603, -0.58, 0.6399, 0.1603, -0.58, 0.6399, -0.0887, -0.58, 0.6238, -0.0887, -0.5629, 0.6238, -0.0887, -0.5629, 0.6399, -0.0887, -0.5629, 0.6399, -0.0887, -0.58, 0.6399, -0.0887, -0.58, 0.6238, -0.0887, -0.5629, 0.6238, -0.0887, -0.5629, 0.6238, 0.1603, -0.5629, 0.6399, 0.1603, -0.5629, 0.6399, 0.1603, -0.5629, 0.6399, -0.0887, -0.5629, 0.6238, -0.0887, -0.5629, 0.6238, 0.1603, -0.58, 0.6238, 0.1603, -0.58, 0.6399, 0.1603, -0.58, 0.6399, 0.1603, -0.5629, 0.6399, 0.1603, -0.5629, 0.6238, 0.1603, -0.58, 0.6238, 0.1603, -0.58, 0.6238, -0.0887, -0.58, 0.6399, -0.0887, -0.58, 0.6399, -0.0887, -0.58, 0.6399, 0.1603, -0.58, 0.6238, 0.1603, -0.58, 0.4937, -0.0887, -0.58, 0.4852, 0.1602, -0.5629, 0.4852, 0.1602, -0.5629, 0.4852, 0.1602, -0.5629, 0.4937, -0.0887, -0.58, 0.4937, -0.0887, -0.58, 0.5098, -0.0881, -0.5629, 0.5098, -0.0881, -0.5629, 0.5013, 0.1608, -0.5629, 0.5013, 0.1608, -0.58, 0.5013, 0.1608, -0.58, 0.5098, -0.0881, -0.58, 0.4937, -0.0887, -0.5629, 0.4937, -0.0887, -0.5629, 0.5098, -0.0881, -0.5629, 0.5098, -0.0881, -0.58, 0.5098, -0.0881, -0.58, 0.4937, -0.0887, -0.5629, 0.4937, -0.0887, -0.5629, 0.4852, 0.1602, -0.5629, 0.5013, 0.1608, -0.5629, 0.5013, 0.1608, -0.5629, 0.5098, -0.0881, -0.5629, 0.4937, -0.0887, -0.5629, 0.4852, 0.1602, -0.58, 0.4852, 0.1602, -0.58, 0.5013, 0.1608, -0.58, 0.5013, 0.1608, -0.5629, 0.5013, 0.1608, -0.5629, 0.4852, 0.1602, -0.58, 0.4852, 0.1602, -0.58, 0.4937, -0.0887, -0.58, 0.5098, -0.0881, -0.58, 0.5098, -0.0881, -0.58, 0.5013, 0.1608, -0.58, 0.4852, 0.1602, -0.58, 0.7638, -0.0887, -0.58, 0.7584, 0.1603, -0.5629, 0.7584, 0.1603, -0.5629, 0.7584, 0.1603, -0.5629, 0.7638, -0.0887, -0.58, 0.7638, -0.0887, -0.58, 0.7799, -0.0884, -0.5629, 0.7799, -0.0884, -0.5629, 0.7745, 0.1606, -0.5629, 0.7745, 0.1606, -0.58, 0.7745, 0.1606, -0.58, 0.7799, -0.0884, -0.58, 0.7638, -0.0887, -0.5629, 0.7638, -0.0887, -0.5629, 0.7799, -0.0884, -0.5629, 0.7799, -0.0884, -0.58, 0.7799, -0.0884, -0.58, 0.7638, -0.0887, -0.5629, 0.7638, -0.0887, -0.5629, 0.7584, 0.1603, -0.5629, 0.7745, 0.1606, -0.5629, 0.7745, 0.1606, -0.5629, 0.7799, -0.0884, -0.5629, 0.7638, -0.0887, -0.5629, 0.7584, 0.1603, -0.58, 0.7584, 0.1603, -0.58, 0.7745, 0.1606, -0.58, 0.7745, 0.1606, -0.5629, 0.7745, 0.1606, -0.5629, 0.7584, 0.1603, -0.58, 0.7584, 0.1603, -0.58, 0.7638, -0.0887, -0.58, 0.7799, -0.0884, -0.58, 0.7799, -0.0884, -0.58, 0.7745, 0.1606, -0.58, 0.7584, 0.1603, -0.58, 1.1625, -0.0887, -0.58, 1.1625, 0.1603, -0.5629, 1.1625, 0.1603, -0.5629, 1.1625, 0.1603, -0.5629, 1.1625, -0.0887, -0.58, 1.1625, -0.0887, -0.58, 1.1786, -0.0887, -0.5629, 1.1786, -0.0887, -0.5629, 1.1786, 0.1603, -0.5629, 1.1786, 0.1603, -0.58, 1.1786, 0.1603, -0.58, 1.1786, -0.0887, -0.58, 1.1625, -0.0887, -0.5629, 1.1625, -0.0887, -0.5629, 1.1786, -0.0887, -0.5629, 1.1786, -0.0887, -0.58, 1.1786, -0.0887, -0.58, 1.1625, -0.0887, -0.5629, 1.1625, -0.0887, -0.5629, 1.1625, 0.1603, -0.5629, 1.1786, 0.1603, -0.5629, 1.1786, 0.1603, -0.5629, 1.1786, -0.0887, -0.5629, 1.1625, -0.0887, -0.5629, 1.1625, 0.1603, -0.58, 1.1625, 0.1603, -0.58, 1.1786, 0.1603, -0.58, 1.1786, 0.1603, -0.5629, 1.1786, 0.1603, -0.5629, 1.1625, 0.1603, -0.58, 1.1625, 0.1603, -0.58, 1.1625, -0.0887, -0.58, 1.1786, -0.0887, -0.58, 1.1786, -0.0887, -0.58, 1.1786, 0.1603, -0.58, 1.1625, 0.1603, -0.58, 1.0242, -0.0887, -0.58, 1.032, 0.1602, -0.5629, 1.032, 0.1602, -0.5629, 1.032, 0.1602, -0.5629, 1.0242, -0.0887, -0.58, 1.0242, -0.0887, -0.58, 1.0403, -0.0892, -0.5629, 1.0403, -0.0892, -0.5629, 1.0481, 0.1597, -0.5629, 1.0481, 0.1597, -0.58, 1.0481, 0.1597, -0.58, 1.0403, -0.0892, -0.58, 1.0242, -0.0887, -0.5629, 1.0242, -0.0887, -0.5629, 1.0403, -0.0892, -0.5629, 1.0403, -0.0892, -0.58, 1.0403, -0.0892, -0.58, 1.0242, -0.0887, -0.5629, 1.0242, -0.0887, -0.5629, 1.032, 0.1602, -0.5629, 1.0481, 0.1597, -0.5629, 1.0481, 0.1597, -0.5629, 1.0403, -0.0892, -0.5629, 1.0242, -0.0887, -0.5629, 1.032, 0.1602, -0.58, 1.032, 0.1602, -0.58, 1.0481, 0.1597, -0.58, 1.0481, 0.1597, -0.5629, 1.0481, 0.1597, -0.5629, 1.032, 0.1602, -0.58, 1.032, 0.1602, -0.58, 1.0242, -0.0887, -0.58, 1.0403, -0.0892, -0.58, 1.0403, -0.0892, -0.58, 1.0481, 0.1597, -0.58, 1.032, 0.1602, -0.58, 1.4368, -0.0887, -0.58, 1.4368, 0.1603, -0.5629, 1.4368, 0.1603, -0.5629, 1.4368, 0.1603, -0.5629, 1.4368, -0.0887, -0.58, 1.4368, -0.0887, -0.58, 1.453, -0.0887, -0.5629, 1.453, -0.0887, -0.5629, 1.453, 0.1603, -0.5629, 1.453, 0.1603, -0.58, 1.453, 0.1603, -0.58, 1.453, -0.0887, -0.58, 1.4368, -0.0887, -0.5629, 1.4368, -0.0887, -0.5629, 1.453, -0.0887, -0.5629, 1.453, -0.0887, -0.58, 1.453, -0.0887, -0.58, 1.4368, -0.0887, -0.5629, 1.4368, -0.0887, -0.5629, 1.4368, 0.1603, -0.5629, 1.453, 0.1603, -0.5629, 1.453, 0.1603, -0.5629, 1.453, -0.0887, -0.5629, 1.4368, -0.0887, -0.5629, 1.4368, 0.1603, -0.58, 1.4368, 0.1603, -0.58, 1.453, 0.1603, -0.58, 1.453, 0.1603, -0.5629, 1.453, 0.1603, -0.5629, 1.4368, 0.1603, -0.58, 1.4368, 0.1603, -0.58, 1.4368, -0.0887, -0.58, 1.453, -0.0887, -0.58, 1.453, -0.0887, -0.58, 1.453, 0.1603, -0.58, 1.4368, 0.1603, -0.58, 1.2985, -0.0887, -0.58, 1.3063, 0.1602, -0.5629, 1.3063, 0.1602, -0.5629, 1.3063, 0.1602, -0.5629, 1.2985, -0.0887, -0.58, 1.2985, -0.0887, -0.58, 1.3147, -0.0892, -0.5629, 1.3147, -0.0892, -0.5629, 1.3225, 0.1597, -0.5629, 1.3225, 0.1597, -0.58, 1.3225, 0.1597, -0.58, 1.3147, -0.0892, -0.58, 1.2985, -0.0887, -0.5629, 1.2985, -0.0887, -0.5629, 1.3147, -0.0892, -0.5629, 1.3147, -0.0892, -0.58, 1.3147, -0.0892, -0.58, 1.2985, -0.0887, -0.5629, 1.2985, -0.0887, -0.5629, 1.3063, 0.1602, -0.5629, 1.3225, 0.1597, -0.5629, 1.3225, 0.1597, -0.5629, 1.3147, -0.0892, -0.5629, 1.2985, -0.0887, -0.5629, 1.3063, 0.1602, -0.58, 1.3063, 0.1602, -0.58, 1.3225, 0.1597, -0.58, 1.3225, 0.1597, -0.5629, 1.3225, 0.1597, -0.5629, 1.3063, 0.1602, -0.58, 1.3063, 0.1602, -0.58, 1.2985, -0.0887, -0.58, 1.3147, -0.0892, -0.58, 1.3147, -0.0892, -0.58, 1.3225, 0.1597, -0.58, 1.3063, 0.1602, -0.58, 1.5873, -0.0887, -0.58, 1.5951, 0.1602, -0.5629, 1.5951, 0.1602, -0.5629, 1.5951, 0.1602, -0.5629, 1.5873, -0.0887, -0.58, 1.5873, -0.0887, -0.58, 1.6034, -0.0892, -0.5629, 1.6034, -0.0892, -0.5629, 1.6112, 0.1597, -0.5629, 1.6112, 0.1597, -0.58, 1.6112, 0.1597, -0.58, 1.6034, -0.0892, -0.58, 1.5873, -0.0887, -0.5629, 1.5873, -0.0887, -0.5629, 1.6034, -0.0892, -0.5629, 1.6034, -0.0892, -0.58, 1.6034, -0.0892, -0.58, 1.5873, -0.0887, -0.5629, 1.5873, -0.0887, -0.5629, 1.5951, 0.1602, -0.5629, 1.6112, 0.1597, -0.5629, 1.6112, 0.1597, -0.5629, 1.6034, -0.0892, -0.5629, 1.5873, -0.0887, -0.5629, 1.5951, 0.1602, -0.58, 1.5951, 0.1602, -0.58, 1.6112, 0.1597, -0.58, 1.6112, 0.1597, -0.5629, 1.6112, 0.1597, -0.5629, 1.5951, 0.1602, -0.58, 1.5951, 0.1602, -0.58, 1.5873, -0.0887, -0.58, 1.6034, -0.0892, -0.58, 1.6034, -0.0892, -0.58, 1.6112, 0.1597, -0.58, 1.5951, 0.1602, -0.58, 2.0045, -0.0887, -0.5629, 2.0045, -0.0887, -0.5629, 2.0207, -0.0887, -0.5629, 2.0207, -0.0887, -0.58, 2.0207, -0.0887, -0.58, 2.0045, -0.0887, -0.58, 2.3061, -0.0887, -0.5629, 2.3061, -0.0887, -0.5629, 2.3223, -0.0887, -0.5629, 2.3223, -0.0887, -0.58, 2.3223, -0.0887, -0.58, 2.3061, -0.0887, -0.58, 2.1678, -0.0887, -0.5629, 2.1678, -0.0887, -0.5629, 2.184, -0.0892, -0.5629, 2.184, -0.0892, -0.58, 2.184, -0.0892, -0.58, 2.1678, -0.0887, -0.58, 2.5355, -0.0887, -0.5629, 2.5355, -0.0887, -0.5629, 2.5516, -0.0887, -0.5629, 2.5516, -0.0887, -0.58, 2.5516, -0.0887, -0.58, 2.5355, -0.0887, -0.58, 2.3972, -0.0887, -0.5629, 2.3972, -0.0887, -0.5629, 2.4133, -0.0892, -0.5629, 2.4133, -0.0892, -0.58, 2.4133, -0.0892, -0.58, 2.3972, -0.0887, -0.58, 2.7775, -0.0887, -0.5629, 2.7775, -0.0887, -0.5629, 2.7937, -0.0887, -0.5629, 2.7937, -0.0887, -0.58, 2.7937, -0.0887, -0.58, 2.7775, -0.0887, -0.58, 2.6392, -0.0887, -0.5629, 2.6392, -0.0887, -0.5629, 2.6554, -0.0892, -0.5629, 2.6554, -0.0892, -0.58, 2.6554, -0.0892, -0.58, 2.6392, -0.0887)
+
+[node name="Silo" type="MeshInstance3D"]
+mesh = SubResource("ArrayMesh_fok00")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("3_pd83w")
+surface_material_override/1 = ExtResource("4_l3ynj")
+surface_material_override/2 = ExtResource("4_l3ynj")
+surface_material_override/3 = ExtResource("4_l3ynj")
+surface_material_override/4 = ExtResource("4_l3ynj")
+surface_material_override/5 = ExtResource("4_l3ynj")
+surface_material_override/6 = ExtResource("4_l3ynj")
+surface_material_override/7 = ExtResource("4_l3ynj")
+surface_material_override/8 = ExtResource("4_l3ynj")
+surface_material_override/9 = ExtResource("4_l3ynj")
+surface_material_override/10 = ExtResource("4_l3ynj")
+surface_material_override/11 = ExtResource("4_l3ynj")
+surface_material_override/12 = ExtResource("4_l3ynj")
+surface_material_override/13 = ExtResource("4_l3ynj")
+surface_material_override/14 = ExtResource("5_56w58")
+surface_material_override/15 = ExtResource("5_56w58")
+surface_material_override/16 = ExtResource("5_56w58")
+surface_material_override/17 = ExtResource("5_56w58")
+surface_material_override/18 = ExtResource("5_56w58")
+surface_material_override/19 = ExtResource("5_56w58")
+surface_material_override/20 = ExtResource("5_56w58")
+surface_material_override/21 = ExtResource("5_56w58")
+surface_material_override/22 = ExtResource("5_56w58")
+surface_material_override/23 = ExtResource("5_56w58")
+surface_material_override/24 = ExtResource("5_56w58")
+surface_material_override/25 = ExtResource("5_56w58")
+surface_material_override/26 = ExtResource("5_56w58")
+surface_material_override/27 = ExtResource("5_56w58")
+surface_material_override/28 = ExtResource("5_56w58")
+surface_material_override/29 = ExtResource("5_56w58")
+surface_material_override/30 = ExtResource("5_56w58")
+surface_material_override/31 = ExtResource("5_56w58")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+script = ExtResource("6_bt6jy")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_scpqw")

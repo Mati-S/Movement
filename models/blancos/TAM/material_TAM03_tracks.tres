@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dgpfbsuxbllh"]
+
+[ext_resource type="Texture2D" uid="uid://c7o8xcc45etw5" path="res://visualizador/casos/blancos/TAM/TAM_tam-map2.jpg" id="1_0c1mp"]
+
+[resource]
+resource_name = "Material3"
+cull_mode = 2
+albedo_texture = ExtResource("1_0c1mp")
+metallic = 1.0
+roughness = 0.8

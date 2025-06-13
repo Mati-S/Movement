@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b1lr07w3exs7u"]
+
+[ext_resource type="Texture2D" uid="uid://bta66pak5pp2w" path="res://visualizador/casos/blancos/Silo2/siloDestruido_Silo.jpg" id="1_dntvd"]
+
+[resource]
+resource_name = "silo"
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+albedo_texture = ExtResource("1_dntvd")
+metallic = 1.0
+roughness = 0.75

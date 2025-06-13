@@ -24,10 +24,15 @@ var movement_timer : Timer
 
 func _physics_process(delta: float) -> void:
 	if flag_movement:
+		var parent = self.get_parent()
+		if self.global_position.distance_to(parent.global_position) >= 5.0:
+			flag_movement = !flag_movement
+			parent.got_stucked()
+			return
 		if flag_rotate:
 			rotate_towards_target(delta)
 		else:
-			var parent = self.get_parent()
+			
 			var target_position = path_array[0]
 			if global_position.distance_to(path_array[0]) < 5:
 				point_achieved.emit()
@@ -51,6 +56,8 @@ func _physics_process(delta: float) -> void:
 				parent.global_position += parent.global_position.direction_to(path_array[0]) * delta * 10
 
 func rotate_towards_target(delta: float):
+	var parent = self.get_parent()
+	
 	var to_target = (path_array.front() - global_transform.origin).normalized()
 	to_target.y = 0
 
@@ -58,14 +65,13 @@ func rotate_towards_target(delta: float):
 	facing.y = 0
 
 	var alignment = facing.dot(to_target)
-	if alignment <= -0.99:
+	if alignment >= 0.99:
 		clear_timer()
 		return
 
-	var target_angle = atan2(-to_target.z, to_target.x)
-	var current_angle = rotation.y
-	rotation.y = lerp_angle(current_angle, target_angle, ROTATE_SPEED * delta)
-	print(movement_timer.time_left)
+	var target_angle = atan2(-to_target.x, -to_target.z)
+	var current_angle = parent.rotation.y
+	parent.rotation.y = lerp_angle(current_angle, target_angle, ROTATE_SPEED * delta)
 
 	
 func _on_timer_timeout():

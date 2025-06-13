@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dkn8ythjphol0"]
+
+[ext_resource type="Texture2D" uid="uid://bu7bwctat13y2" path="res://visualizador/casos/blancos/Silo1/silo_troncosilo.jpg" id="1_mqi4g"]
+
+[resource]
+resource_name = "Material1"
+albedo_texture = ExtResource("1_mqi4g")
+roughness = 0.68

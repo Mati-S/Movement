@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://vxxgsytp5fx6"]
+
+[ext_resource type="Script" uid="uid://b7iedv6enfyk7" path="res://scripts/Destruible.gd" id="1_nm88l"]
+[ext_resource type="PackedScene" uid="uid://bpmg7vg6n4hyr" path="res://visualizador/casos/blancos/TAM/modelo_tam_vivo.tscn" id="1_u3r8k"]
+[ext_resource type="PackedScene" uid="uid://cb3lygulxbbah" path="res://visualizador/casos/blancos/TAM/modelo_tam_muerto.tscn" id="2_xosub"]
+[ext_resource type="Script" uid="uid://bmkb3f454iv6b" path="res://scripts/VehicleVivo.gd" id="4_itwnh"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_bgwql"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath(".:rotation")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath(".:salud")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+
+[node name="TAM" type="Node3D"]
+script = ExtResource("1_nm88l")
+modelo_vivo = ExtResource("1_u3r8k")
+modelo_muerto = ExtResource("2_xosub")
+
+[node name="Sync" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_bgwql")
+
+[node name="Vivo" type="VehicleBody3D" parent="." instance=ExtResource("1_u3r8k")]
+script = ExtResource("4_itwnh")
+
+[node name="Muerto" type="StaticBody3D" parent="." instance=ExtResource("2_xosub")]
+visible = false

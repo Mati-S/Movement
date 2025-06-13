@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://b6b7aly53ux2b"]
+
+[ext_resource type="Texture2D" uid="uid://3otkjqu7le0" path="res://visualizador/casos/blancos/4x4/4x4_4x4.png" id="1_s5wxx"]
+
+[resource]
+resource_name = "Shell"
+transparency = 4
+albedo_texture = ExtResource("1_s5wxx")
+roughness = 0.8

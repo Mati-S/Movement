@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @onready var ray : RayCast3D = $RayCast3D
+@onready var anim_player : AnimationPlayer = $AnimationPlayer
 
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
@@ -21,6 +22,15 @@ var last_expl_position : Vector3
 var path_position : int = 0
 var path_array : Array[Vector3]
 var return_path_array : Array[Vector3]
+
+var idle_animations : Array [String] = ["Idle", "Idle_Talking"]
+var running_animations : Array [String] = ["Crouch_Fwd", "Jog_Fwd", "Sprint"]
+var moving_animations: Array [String] = ["Walk", "Walk_Formal"]
+var combat_animations: Array[String] = ["Idle", "Idle_talking", "Crouch_Idle", "Pistol_Idle"]
+
+func _ready() -> void:
+	var random = randi_range(0, idle_animations.size() -1)
+	swap_animation("Idle")
 
 
 func _physics_process(delta):
@@ -47,6 +57,7 @@ func _physics_process(delta):
 				else:
 					flag_mover = !flag_mover
 					velocity = Vector3.ZERO
+					swap_animation("combat")
 		else:
 			move_forward()
 				
@@ -127,12 +138,20 @@ func get_ground_height(position_a: Vector3, max_distance: float = 100.0) -> floa
 	else:
 		return -INF  # No se detectó terreno
 		
-func swap_to_new_path(new_path: Array) -> void:
+func swap_to_new_path(new_path: Array, type: String) -> void:
 	if new_path.size() > 0 :
 		path_array = new_path
 		flag_mover = true
 		look_at(path_array[0])
 		move_forward()
+		match type:
+			"explotion":
+				swap_animation("running")
+			"new_path":
+				swap_animation("movement")
+				
+
+				
 		
 func clear_path() ->void:
 	var path = get_node('./Path')
@@ -141,49 +160,23 @@ func clear_path() ->void:
 			child.free()
 			path_array.clear()
 			
-			
-#Movimiento sin path a mano:
-#var explotion_added : bool = false
-
-#func run_to_cover_from(explotion_position: Vector3):
-	#last_expl_position = explotion_position
-	#explotion_added = true
-	#var my_position = self.global_transform.origin
-	#var direction_to_target = (explotion_position - my_position).normalized()
-#
-	#var opposite_direction = -direction_to_target
-	#opposite_direction.y = 0.0
-	#
-	#var fake_target = my_position + opposite_direction
-	#look_at(fake_target)
-	#ray.look_at(fake_target)
-	
-#func _physics_process(delta: float) -> void:	
-	#if explotion_added:
-		#var distance_to_exp = position.distance_to(last_expl_position)
-		#if distance_to_exp < 30.0:
-			#if ray.is_colliding():
-				#var parent = ray.get_collider().get_parent().get_name()
-				#if parent != 'Terrain':
-					##velocity = Vector3.ZERO
-					#check_clean_path()
-			#else:
-				#move_forward()
-		#else:
-			#explotion_added = !explotion_added
-	#
-	#
-#func add_path(to: Vector3) -> void:
-	#var path_init
-	#if path_array.is_empty():
-		#path_init = position
-	#else:
-		#path_init = path_array.get(path_array.size() - 1)
-#
-	#for i in range(path_points):
-		#var t = float(i) / float(path_points)
-		#var punto_intermedio = path_init.lerp(to, t)
-		#var ground_height = get_ground_height(punto_intermedio)
-		#if ground_height == -INF:
-			#break
-		#path_array.append(punto_intermedio)
+func swap_animation(new_animation_type: String):
+	var random = 0
+	var random_max = 0
+	var animations = []
+	match new_animation_type:
+		"running":
+			animations = running_animations
+			random_max = animations.size() -1
+			random = randi_range(0, random_max)
+			velocity_speed = remap(random, 0, running_animations.size() -1, 1.5, 5.0)
+		"movement":
+			animations = moving_animations
+			velocity_speed = 2.0
+		"combat":
+			animations = combat_animations
+			random_max = animations.size() -1
+			random = randi_range(0, random_max)
+		_:
+			animations = idle_animations
+	anim_player.play(animations[random])

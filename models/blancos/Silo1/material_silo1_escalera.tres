@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cce20ktt2vs7a"]
+
+[ext_resource type="Texture2D" uid="uid://de5bq63yhx31e" path="res://visualizador/casos/blancos/Silo1/silo_madera.jpg" id="1_dbgvu"]
+
+[resource]
+resource_name = "Material17"
+albedo_texture = ExtResource("1_dbgvu")
+roughness = 0.68

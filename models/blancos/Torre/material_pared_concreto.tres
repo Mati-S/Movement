@@ -1,0 +1,9 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://du32skpr6ow2l"]
+
+[ext_resource type="Texture2D" uid="uid://dtejei0hxrcsd" path="res://visualizador/casos/blancos/Torre/torreDeControl_LadrillosGrises.jpg" id="1_7ctnd"]
+
+[resource]
+resource_name = "PDX8_-_Default"
+cull_mode = 2
+albedo_texture = ExtResource("1_7ctnd")
+roughness = 0.86

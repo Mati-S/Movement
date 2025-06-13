@@ -1,4 +1,4 @@
-class_name TelemetryBody extends VehicleBody3D
+class_name TelemetryBody extends StaticBody3D
 
 @export_range(0.0, 1.0) var opacidad: float = 1.0
 @export_range(0.0, 1.0) var reflexividad: float = 1.0
